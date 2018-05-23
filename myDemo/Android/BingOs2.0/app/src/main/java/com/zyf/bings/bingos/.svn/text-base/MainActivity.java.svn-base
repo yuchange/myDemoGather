@@ -1,0 +1,53 @@
+package com.zyf.bings.bingos;
+
+import android.os.Bundle;
+import android.support.v4.util.ArrayMap;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+
+import com.zyf.bings.bingos_libnet.RxOkClient;
+import com.zyf.bings.bingos_libnet.action.WebAction;
+import com.zyf.bings.bingos_libnet.constant.BingNetStates;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MainActivity extends AppCompatActivity {
+
+
+    private static final String AD_INFO_QUERY_METHOD = "ad.info.query";
+    private static final String AD_INFO_QUERY_URL = "/adInfoQuery.shtml";
+
+    public static final String URL = "http://mall.bingstar.com.cn/bingstar/if/haiEr/adInfoQuery.shtml";
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        HashMap<String, String> hashMap = new HashMap<>();
+        hashMap.put("123", "afsafsa");
+        hashMap.put("aaa", "456");
+        hashMap.put("777", "addd");
+        hashMap.put("ddd", "=&");
+        hashMap.put("jjj", "=");
+       // OkClient.doStringGetRequest("http://www.sojson.com/open/api/lunar/json.shtml", hashMap, null, null);
+
+        Map<String, String> map = new ArrayMap<>();
+        map.put(BingNetStates.REQUEST_DATA, "{\"homepage_id\":\"0\"}");
+        map.put("method", "ad.info.query");
+        RxOkClient.doPost(map, URL, getClass().getSimpleName())
+                .subscribe(new WebAction() {
+                    @Override
+                    public void onSuccess(String model) {
+                        Log.e("RxOkClient", "onSuccess: 睡觉了。。。。");
+                    }
+
+                    @Override
+                    public void onFailed(int code, String msg) {
+
+                    }
+                });
+
+    }
+}

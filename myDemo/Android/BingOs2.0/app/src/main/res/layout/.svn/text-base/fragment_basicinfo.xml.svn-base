@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="10dp"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent">
+
+<ImageView
+    android:id="@+id/basic_info_head_icon"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@mipmap/basic_info_head_big"
+    android:layout_marginLeft="383dp"
+    android:layout_marginRight="56dp"
+    android:layout_marginTop="87dp"/>
+    <TextView
+        android:id="@+id/basic_info_name"
+       style="@style/manager_txt"
+        android:text="账户信息：Young"
+        android:layout_marginTop="127dp"
+        android:layout_marginBottom="27dp"
+        android:layout_toRightOf="@id/basic_info_head_icon"/>
+
+    <EditText
+        android:id="@+id/basic_info_number"
+        style="@style/manager_txt"
+        android:layout_marginBottom="27dp"
+        android:layout_below="@id/basic_info_name"
+        android:layout_toRightOf="@id/basic_info_head_icon"
+        android:drawableRight="@mipmap/basic_info_line"
+        android:drawablePadding="30dp"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:background="@null"
+        android:text="联系电话：1654512316" />
+
+    <TextView
+        android:id="@+id/basic_info_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_marginLeft="11dp"
+        android:text="修改"
+        android:textColor="#FF8434"
+        android:layout_alignTop="@id/basic_info_number"
+        android:layout_toRightOf="@id/basic_info_number"
+        />
+    <TextView
+        style="@style/manager_txt"
+        android:layout_below="@id/basic_info_number"
+        android:layout_marginBottom="27dp"
+        android:layout_toRightOf="@id/basic_info_head_icon"
+        android:text="微信：1654512316" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/basic_info_small_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@id/basic_info_head_icon"
+        android:layout_marginLeft="393dp"
+        android:layout_marginTop="30dp"
+        />
+    <TextView
+        android:id="@+id/basic_info_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF8434"
+        android:padding="50dp"
+        android:textSize="17sp"
+        android:drawableLeft="@mipmap/basic_address"
+        android:gravity="center"
+        android:drawablePadding="@dimen/dp_10"
+        android:layout_marginBottom="36dp"
+        android:layout_alignLeft="@id/basic_info_head_icon"
+        android:layout_alignParentBottom="true"
+        android:text="管理收货地址"/>
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bingstar.bingmall.video.lib.SynLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vipager="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ads_syn_linear_title"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/ads_padding"
+        android:paddingRight="@dimen/ads_padding">
+
+
+        <com.bingstar.bingmall.home.HomeTitleView
+            android:id="@+id/home_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.bingstar.bingmall.home.HomeTitleView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.bingstar.bingmall.ads.view.MutableViewPager
+                android:id="@+id/ads_info_main"
+                android:layout_width="@dimen/ads_one_w"
+                android:layout_height="@dimen/ads_one_h"
+                vipager:dotView="@drawable/ads_main_dot"
+                vipager:viewType="bottomOfView"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ads_space_top_v"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ads_info_dis"
+                    android:layout_width="@dimen/ads_top_right_w"
+                    android:layout_height="@dimen/ads_one_h"/>
+
+                <!--<ImageView
+                    android:id="@+id/ads_info_cycle"
+                    android:layout_width="@dimen/ads_top_right_w"
+                    android:layout_height="@dimen/ads_top_right_h"
+                    android:layout_marginTop="@dimen/ads_space_top_h"/>-->
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.bingstar.bingmall.ads.view.MutableViewPager
+            android:id="@+id/ads_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/ads_space_center_h"
+            vipager:dotView="@drawable/ads_main_dot"
+            vipager:viewType="underOfView">
+
+        </com.bingstar.bingmall.ads.view.MutableViewPager>
+    </LinearLayout>
+</com.bingstar.bingmall.video.lib.SynLinearLayout>

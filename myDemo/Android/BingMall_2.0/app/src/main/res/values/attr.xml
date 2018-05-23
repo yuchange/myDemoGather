@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<declare-styleable name="FlowLayout">
+    <attr name="lineSpacing" format="dimension"/>
+    <attr name="maxLine" format="integer"/>
+</declare-styleable>
+
+<declare-styleable name="viewpager">
+    <attr name="isCircle" format="boolean"/>
+    <attr name="viewType">
+        <enum name="bottomOfView" value="0"/>
+        <enum name="underOfView" value="1"/>
+    </attr>
+    <attr name="dotView" format="reference"/>
+</declare-styleable>
+</resources>

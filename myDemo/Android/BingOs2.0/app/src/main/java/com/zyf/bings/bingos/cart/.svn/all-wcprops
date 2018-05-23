@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1133/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/cart
+END
+ICartContract.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1051/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/cart/ICartContract.java
+END
+CartGoodsAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1027/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/cart/CartGoodsAdapter.java
+END
+CartPresenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1051/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/cart/CartPresenter.java
+END
+ShopCartFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1133/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/cart/ShopCartFragment.java
+END
+DeleteDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1033/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/cart/DeleteDialog.java
+END

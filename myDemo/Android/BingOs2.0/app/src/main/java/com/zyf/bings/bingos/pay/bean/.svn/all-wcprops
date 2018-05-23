@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1033/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/pay/bean
+END
+OrderInfoBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1033/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/pay/bean/OrderInfoBean.java
+END
+HaierPayInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/776/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/pay/bean/HaierPayInfo.java
+END
+HaierPayList.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/776/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/pay/bean/HaierPayList.java
+END
+ZorderStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/776/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/pay/bean/ZorderStatus.java
+END
+OrderState.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/776/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/pay/bean/OrderState.java
+END

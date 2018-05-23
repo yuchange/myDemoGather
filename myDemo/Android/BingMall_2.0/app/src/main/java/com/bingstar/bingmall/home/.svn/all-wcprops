@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/718/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/home
+END
+HomeTitleView.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/718/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/home/HomeTitleView.java
+END
+IHomeContract.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/home/IHomeContract.java
+END
+TitleStates.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/home/TitleStates.java
+END
+HomePresenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/home/HomePresenter.java
+END
+HomeTitleAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/home/HomeTitleAdapter.java
+END
+HomeSetChildEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/home/HomeSetChildEvent.java
+END

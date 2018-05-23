@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="base_transparent">#00ffffff</color>
+
+    <color name="goodsDetailLimitPrice">#ff2b36</color>
+    <color name="goodsDetailName">#939393</color>
+    <color name="goodsDetailPrice">#c1c1c1</color>
+    <color name="selected_day_background">#ff0092f4</color>
+    <color name="cycle_button">#01A4F1</color>
+    <color name="colorgray">#F0F0F0</color>
+    <color name="cycle_weight">#A8A8A8</color>
+    <color name="cycle_name">#5F5F5F</color>
+    <color name="cycle_back">#F6F6F6</color>
+
+    <color name="order_title">#717171</color>
+    <color name="order_read">#FF908E</color>
+    <color name="order_time">#AAAAAA</color>
+    <color name="order_name">#989898</color>
+    <color name="order_money">#989898</color>
+    <color name="order_bottom_money">#FE8F8E</color>
+    <color name="order_cycle_name">#6C6C6C</color>
+    <color name="order_detail_name">#A4A4A4</color>
+
+    <color name="title_select">#01A4F1</color>
+    <color name="CartFreight">#ff6666</color>
+
+    <color name="cartTitleSelect">#0985af</color>
+    <color name="cartTitle_bg">#00a5dc</color>
+    <color name="total_left_bg">#00AEFF</color>
+
+    <color name="addr_manage_adapter">#ffffff</color>
+    <color name="addr_manage_adapter_name">#878787</color>
+    <color name="addr_manage_adapter_phone">#A1A1A1</color>
+
+
+    <color name="orange">#ff9e61</color>
+
+
+    <color name="order_applay_answer">#FEC7C7</color>
+    <color name="order_applay_money_state">#FF8281</color>
+    <color name="order_applay_state_update">#FE9E9D</color>
+    <color name="order_applay_limit_money">#FF7978</color>
+    <color name="order_applay_weight">#B8B8B8</color>
+
+    <color name="pay_haier_hint">#FF5959</color>
+
+    <color name="discount_title_bg">#35B9F7</color>
+
+    <color name="discount_coupon_info">@android:color/background_light</color>
+
+
+    <color name="logistics_error_text">#878787</color>
+    <color name="coupon_coutom_color">#35B9F7</color>
+    <color name="coupon_single_color">#FFAA85</color>
+    <color name="coupon_category_color">#44D8B4</color>
+    <color name="coupon_remind_bg">#FF553B</color>
+
+    <color name="c_F4F4F4">#F4F4F4</color>
+
+    <color name="ff7300">#FF7300</color>
+
+    <color name="c_919191">#919191</color>
+    <color name="c_c8c8c8">#c8c8c8</color>
+
+    <!--//左边导航栏点击色-->
+    <color name="c_3998FF">#3998FF</color>
+    <color name="c_00C5D1">#00C5D1</color>
+    <color name="c_FEA600">#FEA600</color>
+    <color name="c_FE7400">#FE7400</color>
+    <color name="c_E152E7">#E152E7</color>
+
+
+
+    <color name="tv_shopcart">#919191</color>
+    <color name="tv_shopcart_gray">#c8c8c8</color>
+
+    <color name="tv_common_red">#ff5454</color>
+
+
+    <color name="tv_add_address">#515151</color>
+    <color name="et_add_address">#919191</color>
+
+    <color name="c_04C5D4">#04C5D4</color>
+    <color name="tv_goods_detail_gray">#B2B2B2</color>
+    <color name="tv_goods_detail_black">#919191</color>
+    <color name="tv_goods_detail_spec">#03c5d3</color>
+
+<color name="tv_order_price">#FF6C6C</color>
+</resources>

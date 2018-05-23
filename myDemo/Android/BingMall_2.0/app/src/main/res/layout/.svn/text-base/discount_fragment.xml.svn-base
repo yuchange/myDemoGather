@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vipager="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_title_h">
+
+        <ImageView
+            android:id="@+id/home_title_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_title_discount" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="26sp"
+            android:text="@string/discount_title_ads"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/order_infofragment_pricetvheight"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/discount_title_bg">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/discount_rv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/discount_fragment_linear_h"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/discount_fragment_linearl_w"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/order_infofragment_nametvmarginleft"
+                android:layout_marginTop="@dimen/order_listitem_headviewheight"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/discount_left1_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/discount_fragment_image_h"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/discount_left2_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/discount_fragment_image_h"
+                    android:layout_marginTop="@dimen/order_infofragment_pricetvmargintop"
+                    android:scaleType="fitXY" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/discount_right_iv"
+                android:layout_width="@dimen/discount_fragment_imagei_w"
+                android:layout_height="@dimen/discount_fragment_imagei_h"
+                android:layout_marginLeft="@dimen/order_infofragment_nametvmarginleft"
+                android:layout_marginTop="@dimen/order_listitem_numtvheight"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <com.bingstar.bingmall.ads.view.MutableViewPager
+            android:id="@+id/discount_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            vipager:viewType="underOfView"
+            vipager:dotView="@drawable/ads_main_dot"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

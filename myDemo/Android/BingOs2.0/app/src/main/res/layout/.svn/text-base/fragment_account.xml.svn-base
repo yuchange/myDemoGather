@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/manager_profile"
+        style="@style/manager_btn">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/manager_profile_msg" />
+
+        <TextView
+            style="@style/manager_txt"
+            android:layout_margin="15dp"
+            android:text="基础信息" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/notification_center"
+        style="@style/manager_btn"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/manager_profile">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/manager_notification" />
+            <TextView
+                android:text="99"
+                style="@style/red_text_num" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/manager_txt"
+            android:layout_margin="15dp"
+            android:text="通知中心" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/manager_order_list"
+        style="@style/manager_btn"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/notification_center">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/manager_shop_list" />
+            <TextView
+                android:id="@+id/tv_order_count"
+                style="@style/red_text_num" />
+        </RelativeLayout>
+
+            <TextView
+                style="@style/manager_txt"
+                android:layout_margin="15dp"
+                android:text="我的订单" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/manager_shop_cart"
+        style="@style/manager_btn"
+        android:layout_below="@id/manager_profile"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/manager_shop_cart" />
+            <TextView
+                android:id="@+id/account_cart_count"
+                android:text="99"
+                style="@style/red_text_num" />
+        </RelativeLayout>
+        <TextView
+            style="@style/manager_txt"
+            android:layout_margin="15dp"
+            android:text="购物车" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/manager_collection"
+        style="@style/manager_btn"
+        android:layout_below="@id/manager_profile"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/manager_shop_cart">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/manager_collection" />
+            <TextView
+                android:text="99"
+                style="@style/red_text_num" />
+        </RelativeLayout>
+        <TextView
+            style="@style/manager_txt"
+            android:layout_margin="15dp"
+            android:text="我的收藏" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/manager_coupon"
+        style="@style/manager_btn"
+        android:layout_below="@id/manager_profile"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/manager_collection">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/manager_coupon" />
+            <TextView
+                android:id="@+id/tv_coupon_count"
+                style="@style/red_text_num" />
+        </RelativeLayout>
+        <TextView
+            style="@style/manager_txt"
+            android:layout_margin="15dp"
+            android:text="优惠券" />
+    </LinearLayout>
+
+</RelativeLayout>

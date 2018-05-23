@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zyf.bings.bingos.ui.statelayout.ProgressFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--<TextView-->
+        <!--android:id="@+id/goods_title_tv"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginLeft="50dp"-->
+        <!--android:text="奶制品"-->
+        <!--android:textColor="#37CBD8"-->
+        <!--android:textSize="17sp"-->
+        <!--android:drawableLeft="@mipmap/brandshop_left_title"-->
+        <!--android:drawablePadding="8dp"-->
+        <!--/>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/goods_rv"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/goods_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/goods_empty"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/c_919191"
+            android:text="暂无商品"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textSize="17sp"/>
+
+
+    </LinearLayout>
+    </com.zyf.bings.bingos.ui.statelayout.ProgressFrameLayout>

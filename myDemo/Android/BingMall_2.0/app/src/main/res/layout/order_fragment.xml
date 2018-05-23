@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/cycle_back"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/order_listItem_height"
+        android:layout_marginLeft="@dimen/add_order_addr_linear_pt"
+        android:layout_marginRight="@dimen/add_order_addr_linear_pt"
+        android:layout_marginTop="@dimen/ads_space_top_h"
+        android:background="@drawable/addr_title"
+        android:gravity="center"
+        android:paddingBottom="@dimen/ads_space_bottom_v"
+        android:text="@string/order_title"
+        android:textSize="@dimen/ads_space_top_h"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/add_order_addr_linear_pt"
+        android:layout_marginRight="@dimen/add_order_addr_linear_pt"
+        android:background="@drawable/addr_recycle"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/order_listItem_marginBottom">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/order_fragment_headheight"
+            android:layout_marginTop="@dimen/order_fragment_headmargintop"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/order_infofragment_nametvmarginleft"
+            android:paddingRight="@dimen/order_infofragment_nametvmarginleft">
+
+            <ImageView
+                android:id="@+id/order_search_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ads_space_top_h"
+                android:layout_marginTop="@dimen/ads_space_bottom_v"
+                android:background="@drawable/order_search"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/ads_space_bottom_v"
+                android:layout_marginTop="@dimen/ads_space_bottom_v"
+                android:text="@string/service_hotline"
+                android:textSize="@dimen/ads_space_center_h" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/order_fragment_headheight"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/order_category"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/order_fragment_headmargintop">
+
+                <TextView
+                    android:layout_width="@dimen/cart_titleitem_view_w"
+                    android:layout_height="@dimen/cart_titleitem_view_h"
+                    android:layout_marginRight="@dimen/cart_titleitem_view_marginright" />
+
+                <ImageView
+                    android:id="@+id/order_alltv"
+                    android:layout_width="@dimen/order_image_w"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/order_title_order" />
+
+                <TextView
+                    android:layout_width="@dimen/cart_titleitem_view_w"
+                    android:layout_height="@dimen/cart_titleitem_view_h"
+                    android:layout_marginLeft="@dimen/cart_titleitem_view_marginright"
+                    android:layout_marginRight="@dimen/cart_titleitem_view_marginright"
+                    android:background="@color/order_time" />
+
+                <ImageView
+                    android:id="@+id/order_unpaidtv"
+                    android:layout_width="@dimen/order_image_w"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/order_title_unpayment_un" />
+
+                <TextView
+                    android:layout_width="@dimen/cart_titleitem_view_w"
+                    android:layout_height="@dimen/cart_titleitem_view_h"
+                    android:layout_marginLeft="@dimen/cart_titleitem_view_marginright"
+                    android:layout_marginRight="@dimen/cart_titleitem_view_marginright"
+                    android:background="@color/order_time" />
+
+                <ImageView
+                    android:id="@+id/order_paid"
+                    android:layout_width="@dimen/order_image_w"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/order_title_payment_un" />
+
+                <TextView
+                    android:layout_width="@dimen/cart_titleitem_view_w"
+                    android:layout_height="@dimen/cart_titleitem_view_h"
+                    android:layout_marginLeft="@dimen/cart_titleitem_view_marginright"
+                    android:layout_marginRight="@dimen/cart_titleitem_view_marginright"
+                    android:background="@color/order_time" />
+
+                <ImageView
+                    android:id="@+id/order_devilery"
+                    android:layout_width="@dimen/order_image_w"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/order_title_delivery_un" />
+
+                <TextView
+                    android:layout_width="@dimen/cart_titleitem_view_w"
+                    android:layout_height="@dimen/cart_titleitem_view_h"
+                    android:layout_marginLeft="@dimen/cart_titleitem_view_marginright"
+                    android:layout_marginRight="@dimen/cart_titleitem_view_marginright" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/orderlist_no_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/cart_fragment_titlerv_h"
+            android:layout_marginLeft="@dimen/ads_space_top_h"
+            android:layout_marginRight="@dimen/ads_space_top_h"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/order_noordertxt_marginbottom_size"
+                android:gravity="center"
+                android:text="@string/orderlist_no_order"
+                android:textColor="@color/cycle_name"
+                android:textSize="@dimen/order_no_order_textsize" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_orderlist_noorder" />
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/orderlist_swip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/cart_fragment_titlerv_h"
+            android:layout_marginLeft="@dimen/ads_space_top_h"
+            android:layout_marginRight="@dimen/ads_space_top_h">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/order_orderlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"></android.support.v7.widget.RecyclerView>
+
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

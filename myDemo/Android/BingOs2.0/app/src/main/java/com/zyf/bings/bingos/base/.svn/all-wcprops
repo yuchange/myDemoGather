@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/973/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/base
+END
+BaseActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/573/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/base/BaseActivity.java
+END
+RVScollListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/688/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/base/RVScollListener.java
+END
+IBaseView.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/661/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/base/IBaseView.java
+END
+IBasePresenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/598/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/base/IBasePresenter.java
+END
+BaseRecycleAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/900/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/base/BaseRecycleAdapter.java
+END
+OnSingleClickListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/688/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/base/OnSingleClickListener.java
+END
+WrapLinearLayoutManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/782/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/base/WrapLinearLayoutManager.java
+END
+Util.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/869/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/base/Util.java
+END
+BaseFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/973/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/base/BaseFragment.java
+END

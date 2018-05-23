@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LibYunzhi</string>
+    <string name="syn_linear_error">加载出错啦 点击重新加载</string>
+    <string name="syn_linear_empty">暂无数据</string>
+</resources>

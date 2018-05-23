@@ -1,0 +1,26 @@
+ext {
+    //服务器地址配置
+
+    host = [
+            //"http://store.bingstar.com.cn/bingstar-mobile/if/haiEr"
+            //http://192.168.1.138:8099/bingstar-mobile/if/haiEr
+            //http://store.bingstar.com.cn/bingstar-mobile_test/if/haiEr
+            debug :"http://139.224.33.12:8088/bingstar-mobile/if/haiEr"  , //最后不带斜杠 请求参数中带
+
+            release: "http://mall.bingstar.com.cn/if/haiEr"
+    ]
+
+    //图片地址配置
+    img = [
+            debug  : "http://dev-bucket.bingstar.com.cn",   //最后不带斜杠 请求参数中带
+            release: "http://prod-bucket.bingstar.com.cn"
+    ]
+
+    //h5地址配置
+    webHtml = [
+         //   "http://192.168.1.138:8099/bingstar-web"
+            //"http://store.bingstar.com.cn/bingstar-web";
+            debug  : "http://192.168.1.138:8099/bingstar-web",   //最后不带斜杠 请求参数中带
+            release: "http://store.bingstar.com.cn/bingstar-web"
+    ]
+}

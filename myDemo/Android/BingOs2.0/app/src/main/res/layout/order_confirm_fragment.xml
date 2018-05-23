@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zyf.bings.bingos.ui.statelayout.ProgressFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                         xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                         android:layout_width="match_parent"
+                                                         android:layout_height="match_parent"
+                                                         android:background="@mipmap/order_confirm_fragment_bg"
+                                                         app:emptyImageMarginTop="0dp"
+                                                         app:errorImageMarginTop="0dp"
+                                                         app:loadingProgressMarginTop="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/iv_shopcart_coupon_logo"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/shopcart_goods_couponlogo"/>
+
+                <TextView
+                    android:id="@+id/tv_choose_coupon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="请选择优惠劵"
+                    android:textColor="@color/tv_shopcart"
+                    android:textSize="@dimen/tv_shopcart"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="33dp"
+                android:layout_toLeftOf="@+id/tv_shopcart_confirm"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/tv_shopcart"
+                        android:textColor="@color/tv_common_red"
+                        android:text="合计：￥"/>
+
+                    <TextView
+                        android:id="@+id/tv_order_confirm_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$9999"
+                        android:textColor="@color/tv_common_red"
+                        android:textSize="@dimen/tv_shopcart"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_shopcart_real_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="总额: $12000-$99999"
+                    android:textSize="@dimen/tv_shopcart"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_shopcart_confirm"
+                android:layout_width="135dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="60dp"
+                android:background="@mipmap/shopcart_confirm_order_bgr"
+                android:gravity="center"
+                android:text="确认下单"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/tv_shopcart"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/c_F4F4F4"/>
+
+        <LinearLayout
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="270dp"
+            android:layout_marginRight="190dp"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/order_confirm_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</com.zyf.bings.bingos.ui.statelayout.ProgressFrameLayout>
+

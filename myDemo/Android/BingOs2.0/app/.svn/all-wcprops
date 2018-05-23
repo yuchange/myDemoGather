@@ -1,0 +1,27 @@
+K 26
+svn:wc:ra_dav:activity-url
+V 42
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/act/
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1137/trunk/bingMallAndroid/BingOs2.0/app
+END
+proguard-rules.pro
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/554/trunk/bingMallAndroid/BingOs2.0/app/proguard-rules.pro
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/554/trunk/bingMallAndroid/BingOs2.0/app/.gitignore
+END
+build.gradle
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1136/trunk/bingMallAndroid/BingOs2.0/app/build.gradle
+END

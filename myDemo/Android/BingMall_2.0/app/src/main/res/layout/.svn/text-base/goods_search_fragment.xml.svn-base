@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/goods_search_dialog_bg">
+
+    <LinearLayout
+
+        android:layout_width="@dimen/goods_search_linear_w"
+        android:layout_height="@dimen/goods_search_linear_h"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/order_infofragment_nametvmarginleft"
+        android:background="@drawable/goodsdetail_search_bg"
+        >
+        <EditText
+            android:id="@+id/goods_search_et"
+            android:layout_width="@dimen/goods_search_edittext_w"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:layout_marginLeft="@dimen/ads_space_top_h"
+            />
+        <ImageView
+            android:id="@+id/gooods_search_iv"
+            android:layout_width="@dimen/ads_bottom_left_h"
+            android:layout_height="@dimen/goods_search_linear_h"
+            android:layout_marginLeft="@dimen/ads_space_bottom_v"/>
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="@dimen/goods_search_linear_w"
+        android:layout_height="@dimen/cycle_leftrv_leftivheight"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/goods_search_fragment_record"
+            android:textSize="@dimen/cart_titleitem_tv_textsize"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/cart_titleitem_tv_padleftright"/>
+
+        <TextView
+            android:id="@+id/goods_search_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/goods_search_fragment_clean_record"
+            android:textSize="@dimen/cart_titleitem_tv_textsize"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/ads_space_bottom_h"
+           />
+        
+    </RelativeLayout>
+    <View
+        android:layout_width="@dimen/order_listView_height"
+        android:layout_height="@dimen/order_info_item_text_h"
+        android:background="@color/order_name"
+        android:layout_gravity="center"/>
+    
+    <com.bingstar.bingmall.goods.view.FlowLayout
+        android:id="@+id/goods_search_flow"
+        android:layout_width="@dimen/order_listView_height"
+        android:layout_gravity="center"
+        android:layout_height="match_parent">
+
+    </com.bingstar.bingmall.goods.view.FlowLayout>
+
+</LinearLayout>

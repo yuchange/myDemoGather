@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1106/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/adapter
+END
+OrderListItemAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1038/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/adapter/OrderListItemAdapter.java
+END
+SuborderAapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/973/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/adapter/SuborderAapter.java
+END
+OrderProductAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/939/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/adapter/OrderProductAdapter.java
+END
+LogisticsInfoAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1105/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/adapter/LogisticsInfoAdapter.java
+END
+SuborderGoodsItemDecoration.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/915/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/adapter/SuborderGoodsItemDecoration.java
+END
+OrderConfirmRvAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/948/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/adapter/OrderConfirmRvAdapter.java
+END
+AllOrdersAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1083/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/adapter/AllOrdersAdapter.java
+END
+AllOrdersItemDecoration.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/858/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/adapter/AllOrdersItemDecoration.java
+END
+SuborderGoodsInfoAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/973/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/adapter/SuborderGoodsInfoAdapter.java
+END
+LogisticsCompanyAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/956/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/adapter/LogisticsCompanyAdapter.java
+END
+LogisticsInfoItemDecoration.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/862/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/adapter/LogisticsInfoItemDecoration.java
+END
+OrderListAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1106/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/adapter/OrderListAdapter.java
+END
+OrderDetailAdpter.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1083/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/adapter/OrderDetailAdpter.java
+END
+SuborderItemDecoration.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/915/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/adapter/SuborderItemDecoration.java
+END

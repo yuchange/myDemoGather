@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/order_listItem_height"
+        android:layout_marginLeft="@dimen/add_order_addr_linear_pt"
+        android:layout_marginRight="@dimen/add_order_addr_linear_pt"
+        android:layout_marginTop="@dimen/ads_space_top_h"
+        android:background="@drawable/addr_title"
+        android:gravity="center"
+        android:paddingBottom="@dimen/ads_space_bottom_v"
+        android:text="@string/goods_good_title"
+        android:textSize="@dimen/ads_space_top_h"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/add_order_addr_linear_pt"
+        android:layout_marginRight="@dimen/add_order_addr_linear_pt"
+        android:background="@drawable/addr_recycle"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/cycle_leftrv_leftivheight"
+        android:paddingLeft="@dimen/ads_space_top_h"
+        android:paddingRight="@dimen/ads_space_top_h">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/goods_good_titlerv"
+                android:layout_width="590dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/cart_titlerv_bg"
+                android:paddingLeft="10dp"
+                android:paddingRight="30dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/order_search"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/order_delete"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/goods_good_bottomrv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                tools:context=".main.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/main_bottom_h"/>
+
+    <com.bingstar.bingmall.main.bottom.LeftBottomView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="@dimen/main_bottom_space"
+        tools:ignore="RtlHardcoded"/>
+
+    <com.bingstar.bingmall.main.bottom.RightBottomView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginRight="@dimen/main_bottom_space"
+        tools:ignore="RtlHardcoded"/>
+
+    <com.bingstar.bingmall.main.bottom.CircleMenuLayout
+        android:id="@+id/main_circle_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/main_bottom_center_space"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/cycle_leftrv_leftivheight"
+            android:layout_height="@dimen/cycle_leftrv_leftivheight"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/main_menu_disscount"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:layout_width="@dimen/cycle_leftrv_leftivheight"
+            android:layout_height="@dimen/cycle_leftrv_leftivheight"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/main_menu_addr"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/main_bottom_discount_t"
+            android:layout_width="@dimen/cycle_leftrv_leftivheight"
+            android:layout_height="@dimen/cycle_leftrv_leftivheight"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            >
+
+            <Button
+                android:id="@+id/coumpon_bottom_info2"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignRight="@+id/main_bottom_discount"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/coumpon_remind"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/main_bottom_discount"
+                android:layout_width="@dimen/cycle_leftrv_leftivheight"
+                android:layout_height="@dimen/cycle_leftrv_leftivheight"
+                android:background="@drawable/main_menu_discount"
+                />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="@dimen/cycle_leftrv_leftivheight"
+            android:layout_height="@dimen/cycle_leftrv_leftivheight"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/main_menu_support"
+            android:visibility="gone"/>
+
+    </com.bingstar.bingmall.main.bottom.CircleMenuLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/main_bottom_center_btn_rel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        >
+
+        <Button
+            android:id="@+id/coumpon_bottom_info"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignRight="@+id/main_bottom_center_btn"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/coumpon_remind"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/main_bottom_center_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_botom_logo"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

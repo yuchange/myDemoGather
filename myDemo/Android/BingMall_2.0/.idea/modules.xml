@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BaiduLBS_Android/BaiduLBS_Android.iml" filepath="$PROJECT_DIR$/BaiduLBS_Android/BaiduLBS_Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Baiduanalysis/Baiduanalysis.iml" filepath="$PROJECT_DIR$/Baiduanalysis/Baiduanalysis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BingMall_2.0.iml" filepath="$PROJECT_DIR$/BingMall_2.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alipaySdk-20161222/alipaySdk-20161222.iml" filepath="$PROJECT_DIR$/alipaySdk-20161222/alipaySdk-20161222.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libyunzhi/libyunzhi.iml" filepath="$PROJECT_DIR$/libyunzhi/libyunzhi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pgyer_sdk_2.5.6/pgyer_sdk_2.5.6.iml" filepath="$PROJECT_DIR$/pgyer_sdk_2.5.6/pgyer_sdk_2.5.6.iml" />
+    </modules>
+  </component>
+</project>

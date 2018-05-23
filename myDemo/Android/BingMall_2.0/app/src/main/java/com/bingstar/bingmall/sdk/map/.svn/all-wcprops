@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/sdk/map
+END
+LatLng.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/sdk/map/LatLng.java
+END
+AutoArrayAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/sdk/map/AutoArrayAdapter.java
+END
+IMapController.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/sdk/map/IMapController.java
+END
+BaiduMapManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/sdk/map/BaiduMapManager.java
+END
+MapAddrBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/sdk/map/MapAddrBean.java
+END

@@ -1,0 +1,419 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/783/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout
+END
+addrmanage_fragment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/addrmanage_fragment.xml
+END
+order_detail_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/order_detail_list.xml
+END
+delete_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/delete_dialog.xml
+END
+order_applay_buttom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/order_applay_buttom.xml
+END
+cycle_detail_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/cycle_detail_dialog.xml
+END
+order_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/order_list_item.xml
+END
+discount_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/discount_view.xml
+END
+discount_card_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/discount_card_item.xml
+END
+discount_card_show_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/783/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/discount_card_show_item.xml
+END
+cart_fragment_onekey.xml
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/659/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/cart_fragment_onekey.xml
+END
+err_fragment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/err_fragment.xml
+END
+base_error_linear.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/base_error_linear.xml
+END
+jc_dialog_volume.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/jc_dialog_volume.xml
+END
+cycle_leftrv_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/cycle_leftrv_item.xml
+END
+launcher_order_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/launcher_order_view.xml
+END
+home_title_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/home_title_item.xml
+END
+goods_address_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/goods_address_dialog.xml
+END
+ads_fragment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/ads_fragment.xml
+END
+cart_coupon_linear.xml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/493/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/cart_coupon_linear.xml
+END
+cart_paywarn_fragment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/597/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/cart_paywarn_fragment.xml
+END
+viewpager_dot_bottom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/viewpager_dot_bottom.xml
+END
+goodslist_products_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/488/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/goodslist_products_item.xml
+END
+syn_linear_error.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/syn_linear_error.xml
+END
+cycle_fragment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/cycle_fragment.xml
+END
+order_applay_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/order_applay_list.xml
+END
+cart_grid_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/488/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/cart_grid_item.xml
+END
+discount_fragment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/discount_fragment.xml
+END
+cart_fragment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/657/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/cart_fragment.xml
+END
+cycle_no_goods.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/cycle_no_goods.xml
+END
+pay_haier_result_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/pay_haier_result_dialog.xml
+END
+cart_discount_pop.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/cart_discount_pop.xml
+END
+main_bottom_left.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/main_bottom_left.xml
+END
+addrmanage_item2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/addrmanage_item2.xml
+END
+order_orderlist_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/order_orderlist_item.xml
+END
+cart_title_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/cart_title_item.xml
+END
+order_detail_heard.xml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/order_detail_heard.xml
+END
+addrmanage_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/addrmanage_item.xml
+END
+goods_search_fragment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/goods_search_fragment.xml
+END
+viewpager_dot_under.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/viewpager_dot_under.xml
+END
+order_fragment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/order_fragment.xml
+END
+home_coupon_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/home_coupon_dialog.xml
+END
+discount_card_fragment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/discount_card_fragment.xml
+END
+jc_dialog_brightness.xml
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/jc_dialog_brightness.xml
+END
+ads_layout_two.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/ads_layout_two.xml
+END
+logistics_item_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/logistics_item_layout.xml
+END
+pay_haierpay_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/pay_haierpay_activity.xml
+END
+jc_layout_standard.xml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/jc_layout_standard.xml
+END
+order_apply_after_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/order_apply_after_layout.xml
+END
+home_fragment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/home_fragment.xml
+END
+goods_fragment_detail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/goods_fragment_detail.xml
+END
+goodslist_fragment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/488/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/goodslist_fragment.xml
+END
+orderdetaillist.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/orderdetaillist.xml
+END
+jc_dialog_progress.xml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/jc_dialog_progress.xml
+END
+collect_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/collect_list_item.xml
+END
+ads_layout_one.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/ads_layout_one.xml
+END
+jc_layout_base.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/jc_layout_base.xml
+END
+discount_timerv_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/discount_timerv_item.xml
+END
+collect_fragment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/collect_fragment.xml
+END
+base_web_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/base_web_activity.xml
+END
+order_applay_list2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/order_applay_list2.xml
+END
+syn_linear_load.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/syn_linear_load.xml
+END
+syn_linear_empty.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/syn_linear_empty.xml
+END
+cycle_rightrv_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/cycle_rightrv_item.xml
+END
+main_bottom_right.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/main_bottom_right.xml
+END
+order_detail_list_2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/order_detail_list_2.xml
+END
+order_infofragment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/order_infofragment.xml
+END
+order_applay_dapter_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/order_applay_dapter_layout.xml
+END
+home_title_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/home_title_layout.xml
+END
+main_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/res/layout/main_activity.xml
+END

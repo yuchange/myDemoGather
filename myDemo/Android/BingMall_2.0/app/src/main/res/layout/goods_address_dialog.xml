@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/addr_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_order_addr_text_t"
+        android:background="@color/selected_day_background"
+        android:gravity="center"
+        android:text="@string/add_order_addr"
+        android:textColor="@color/white"
+        android:textSize="@dimen/use_add_addr_title_size"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/add_order_addr_linear_pl"
+        android:paddingRight="@dimen/add_order_addr_linear_pr"
+        android:paddingTop="@dimen/add_order_addr_linear_pt">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/use_add_addr_text_width"
+                    android:layout_height="@dimen/use_add_addr_text_height"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:text="@string/add_order_addr_name"
+                    android:textSize="@dimen/use_add_addr_text_size"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="*"
+                    android:textColor="#ff0000"/>
+
+
+                <EditText
+                    android:id="@+id/contacts_addr_edit"
+                    android:layout_width="@dimen/add_order_addr_linear_edit_w"
+                    android:layout_height="@dimen/use_add_addr_text_height"
+                    android:background="@drawable/input_edit"
+                    android:maxLength="20"
+                    android:paddingLeft="@dimen/use_add_addr_edtext_padding"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/use_add_addr_text_item_top"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="@dimen/use_add_addr_text_width"
+                    android:layout_height="@dimen/use_add_addr_text_height"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:text="@string/add_order_addr_id"
+                    android:textSize="@dimen/use_add_addr_text_size"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="  "
+                    android:textColor="#ff0000"/>
+
+                <EditText
+                    android:id="@+id/ID_addr_edit"
+                    android:layout_width="@dimen/add_order_addr_linear_edit_w"
+                    android:layout_height="@dimen/use_add_addr_text_height"
+                    android:background="@drawable/input_edit"
+                    android:digits="0123456789X"
+                    android:hint="@string/addr_id_hint"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="18"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/use_add_addr_edtext_padding"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/use_add_addr_text_item_top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/use_add_addr_text_width"
+                    android:layout_height="@dimen/use_add_addr_text_height"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:text="@string/add_order_addr_phone"
+                    android:textSize="@dimen/use_add_addr_text_size"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="*"
+                    android:textColor="#ff0000"/>
+
+                <EditText
+                    android:id="@+id/phone_addr_edit"
+                    android:layout_width="@dimen/add_order_addr_linear_edit_w"
+                    android:layout_height="@dimen/use_add_addr_text_height"
+                    android:background="@drawable/input_edit"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:paddingLeft="@dimen/use_add_addr_edtext_padding"
+                    tools:ignore="TextFields"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/use_add_addr_text_item_top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/use_add_addr_text_width"
+                    android:layout_height="@dimen/use_add_addr_text_height"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:text="@string/add_order_addr_area"
+                    android:textSize="@dimen/use_add_addr_text_size"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="*"
+                    android:textColor="#ff0000"/>
+
+                <EditText
+                    android:id="@+id/area_addr_edit"
+                    android:layout_width="@dimen/add_order_addr_linear_edit_w"
+                    android:layout_height="@dimen/use_add_addr_text_height"
+                    android:background="@drawable/input_edit"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:paddingLeft="@dimen/use_add_addr_edtext_padding"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/use_add_addr_text_item_top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/use_add_addr_text_width"
+                    android:layout_height="@dimen/use_add_addr_text_height"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:text="@string/add_order_addr_detail"
+                    android:textSize="@dimen/use_add_addr_text_size"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="*"
+                    android:textColor="#ff0000"/>
+
+                <AutoCompleteTextView
+                    android:id="@+id/detail_addr_edit"
+                    android:layout_width="@dimen/add_order_addr_linear_edit_w"
+                    android:layout_height="@dimen/use_add_addr_text_height"
+                    android:background="@drawable/input_edit"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:paddingLeft="@dimen/use_add_addr_edtext_padding"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/add_order_addr_relayout_pl">
+
+            <com.baidu.mapapi.map.TextureMapView
+                android:id="@+id/addr_baidu_map"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/add_order_addr_map_h"
+                android:background="@color/white"/>
+
+            <ImageView
+                android:id="@+id/save_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/addr_baidu_map"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/save_button"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

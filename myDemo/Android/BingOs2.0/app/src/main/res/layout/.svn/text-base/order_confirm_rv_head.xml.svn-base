@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="46dp">
+
+        <LinearLayout
+            android:layout_width="600dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:text="收件人信息: "
+                    android:textColor="@color/tv_add_address"
+                    android:textSize="@dimen/common_tv_size" />
+
+                <TextView
+                    android:id="@+id/tv_order_confirm_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="6dp"
+                    android:text="波尔柯察金"
+                    android:textColor="@color/et_add_address"
+                    android:textSize="@dimen/common_tv_size" />
+
+                <TextView
+                    android:id="@+id/tv_order_confirm_user_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="6dp"
+                    android:text="18717999896"
+                    android:textColor="@color/et_add_address"
+                    android:textSize="@dimen/common_tv_size" />
+
+                <TextView
+                    android:id="@+id/tv_order_confirm_user_idcard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="410425199403204558"
+                    android:textColor="@color/et_add_address"
+                    android:textSize="@dimen/common_tv_size" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_order_confirm_user_address"
+                android:layout_width="600dp"
+                android:layout_height="35dp"
+                android:maxLines="1"
+                android:text="浙江省杭州市 余杭区 文一西路998号 海创园高层次人才创新楼505海创园高层次人才创新楼505"
+                android:textColor="@color/et_add_address"
+                android:textSize="@dimen/common_tv_size" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_order_confirm_address_change"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="110dp"
+            android:gravity="center"
+            android:text="修改"
+            android:textColor="#03C5D3"
+            android:textSize="@dimen/common_tv_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/tv_order_confirm_address_change"
+            android:src="@mipmap/order_confirm_divider" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="优惠劵: "
+                android:textColor="@color/tv_add_address"
+                android:textSize="@dimen/common_tv_size" />
+
+            <TextView
+                android:id="@+id/tv_order_confirm_coupon_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="波尔柯察金"
+                android:textColor="@color/et_add_address"
+                android:textSize="@dimen/common_tv_size" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_order_confirm_coupon_select"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="110dp"
+            android:gravity="center"
+            android:text="选择"
+            android:textColor="#03C5D3"
+            android:textSize="@dimen/common_tv_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/tv_order_confirm_coupon_select"
+            android:src="@mipmap/order_confirm_divider" />
+
+    </RelativeLayout>
+
+</LinearLayout>

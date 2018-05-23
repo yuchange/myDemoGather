@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="@dimen/discount_card_linear_w"
+        android:layout_height="@dimen/discount_card_linear_h"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/cart_discount_pop_item"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:text="@string/discount_money"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    />
+
+                <TextView
+                    android:id="@+id/card_item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="-10dp"
+                    android:textColor="@color/black"
+                    android:textSize="50sp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/card_coupon_remind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="23dp"
+                android:maxLines="1"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/carditem_view"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginRight="-10dp"
+            android:background="@drawable/discount_card_item_view"
+            android:paddingTop="5dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/cycle_lefttrv_top"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/discount_item_range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textColor="@color/cycle_weight"
+                    android:textSize="@dimen/discount_card_date_size"
+                    />
+
+                <TextView
+                    android:id="@+id/discount_item_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="8"
+                    android:maxLines="1"
+                    android:textColor="@color/cycle_weight"
+                    android:textSize="@dimen/discount_card_date_size"
+                    />
+
+                <TextView
+                    android:id="@+id/discount_item_validity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textColor="@color/cycle_weight"
+                    android:textSize="@dimen/discount_card_date_size"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/discount_card_item_iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/discount_card_unselect"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

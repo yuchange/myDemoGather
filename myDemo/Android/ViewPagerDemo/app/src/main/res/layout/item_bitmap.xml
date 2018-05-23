@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/list_item_bitmap"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher"
+        />
+    <ImageView
+        android:id="@+id/item_delete"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@mipmap/all"
+        android:layout_gravity="right"
+        />
+
+
+
+</FrameLayout>

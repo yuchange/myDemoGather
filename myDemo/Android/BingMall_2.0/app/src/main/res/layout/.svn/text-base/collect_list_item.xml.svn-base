@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/goods_product_item_linear"
+              android:layout_width="@dimen/goodslist_linear_w"
+              android:layout_height="@dimen/goodslist_products_item_linear_h"
+              android:layout_marginLeft="@dimen/goodslist_linear_marginleft"
+              android:layout_marginRight="@dimen/goodslist_linear_marginleft"
+              android:layout_marginTop="@dimen/goodslist_linear_margintop"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/goods_item_img"
+        android:layout_width="@dimen/goodlist_products_item_pic_w"
+        android:layout_height="@dimen/goodlist_products_item_pic_h"
+        android:layout_gravity="center"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/goods_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:maxLines="1"
+            android:textSize="@dimen/goodslist_productname_textsize" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/goodslist_bottomlinear_h"
+        android:layout_marginTop="@dimen/goodslist_bottomlinear_margintop"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/goods_item_price_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/goodslist_price_margintop"
+                android:textColor="@color/goodsDetailPrice"
+                android:textSize="@dimen/goodslist_product_item_textsize" />
+
+            <TextView
+                android:id="@+id/goods_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/CartFreight"
+                android:textSize="@dimen/goodslist_price_textsize" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/goods_item_add_cart"
+            android:layout_width="@dimen/goodslist_product_item_button_w"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/cart_griditem_freighttv_margintop"
+            android:background="@drawable/goodslist_addcart_bg"
+            android:gravity="center"
+            android:text="@string/goodslist_products_item_addcart"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/goodslist_addcart_textsize"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

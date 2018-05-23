@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/order_listItem_height"
+        android:layout_marginLeft="@dimen/add_order_addr_linear_pt"
+        android:layout_marginRight="@dimen/add_order_addr_linear_pt"
+        android:layout_marginTop="@dimen/ads_space_top_h"
+        android:background="@drawable/addr_title"
+        android:gravity="center"
+        android:paddingBottom="@dimen/ads_space_bottom_v"
+        android:text="@string/discount_count"
+        android:textColor="@color/goodsDetailName"
+        android:textSize="@dimen/ads_space_top_h"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/addr_recycle"
+        android:orientation="vertical"
+        >
+
+        <!--android:layout_marginLeft="@dimen/add_order_addr_linear_pt"
+        android:layout_marginRight="@dimen/add_order_addr_linear_pt"
+
+        android:layout_marginLeft="@dimen/discount_view_coupontitlel"
+            android:layout_marginRight="@dimen/ads_space_top_h"
+        -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/order_fragment_headheight"
+            android:layout_marginLeft="@dimen/discount_view_coupontitlel"
+            android:layout_marginRight="@dimen/add_order_addr_linear_pt"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/discount_use_btn"
+                android:layout_width="@dimen/discount_view_btnw"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/discount_view_textsize"/>
+
+            <Button
+                android:id="@+id/discount_expired_btn"
+                android:layout_width="@dimen/discount_view_btnw"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/discount_view_textsize"
+                />
+
+            <Button
+                android:id="@+id/discount_off_btn"
+                android:layout_width="@dimen/discount_view_btnw"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/discount_view_textsize"
+                />
+
+            <LinearLayout
+                android:id="@+id/discount_expired_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/discount_view_couponwarn"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/discount_warn_logo"/>
+
+                <TextView
+                    android:id="@+id/discount_warn_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/discount_coupon_warn2"
+                    android:textColor="@color/goodsDetailName"
+                    android:textSize="@dimen/goodslist_productname_textsize"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--<android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/discount_card_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/cart_fragment_titlerv_h"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="@dimen/cart_fragment_titlerv_h"
+            android:layout_marginTop="15dp">
+        </android.support.v4.widget.SwipeRefreshLayout>-->
+
+        <com.bingstar.bingmall.video.lib.SynLinearLayout
+            android:id="@+id/discount_card_syn_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/cart_fragment_titlerv_h"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="15dp"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/card_recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+        </com.bingstar.bingmall.video.lib.SynLinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

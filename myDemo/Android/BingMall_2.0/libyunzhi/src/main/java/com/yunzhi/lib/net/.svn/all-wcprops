@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/libyunzhi/src/main/java/com/yunzhi/lib/net
+END
+IHttpManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/libyunzhi/src/main/java/com/yunzhi/lib/net/IHttpManager.java
+END
+OkHttpManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/libyunzhi/src/main/java/com/yunzhi/lib/net/OkHttpManager.java
+END
+IHttpCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/libyunzhi/src/main/java/com/yunzhi/lib/net/IHttpCallback.java
+END
+ConnectStates.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/libyunzhi/src/main/java/com/yunzhi/lib/net/ConnectStates.java
+END

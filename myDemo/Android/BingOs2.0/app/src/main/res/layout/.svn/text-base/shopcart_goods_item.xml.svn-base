@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="278dp"
+    android:layout_marginRight="39dp"
+    android:orientation="vertical"
+    >
+
+    <com.mcxtzhang.swipemenulib.SwipeMenuLayout
+        android:layout_width="match_parent"
+        android:layout_height="277dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="21dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="277dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_shopcart_item_select"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="124dp"
+                android:src="@mipmap/shopcart_goodsitem_unselect"/>
+
+            <FrameLayout
+                android:id="@+id/fl_shopcart_item"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:layout_marginStart="60dp"
+                android:layout_toEndOf="@+id/iv_shopcart_item_select"
+                android:background="@mipmap/shopcart_goodsitem_bg"
+                android:scaleType="fitXY">
+
+                <ImageView
+                    android:id="@+id/iv_shopcart_item_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"/>
+                <ImageView
+                    android:id="@+id/iv_shopcart_item_img_off_shelf"
+                    android:alpha="0.7"
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/shopcart_goodsitem_bg_off_shelf"
+                    android:scaleType="fitXY"/>
+
+                <ImageView
+                    android:id="@+id/iv_shopcart_item_img_seld_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.7"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/sold_out_cart"
+                    android:visibility="invisible"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@+id/fl_shopcart_item"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_shopcart_goodsitem_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="西班牙原瓶进口moscato莫斯卡"
+                    android:textColor="@color/tv_shopcart"
+                    android:textSize="@dimen/tv_shopcart"/>
+
+                <TextView
+                    android:id="@+id/tv_shopcart_goodsitem_spec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="规格:柠檬味"
+                    android:textColor="@color/tv_shopcart_gray"
+                    android:textSize="@dimen/tv_shopcart"/>
+
+                <TextView
+                    android:id="@+id/tv_shopcart_off_the_shelf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="商品已下架"
+                    android:textColor="@color/tv_common_red"
+                    android:textSize="17sp"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="150dp"
+                android:layout_toLeftOf="@+id/linear_cart"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_shopcart_goodsitem_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$888.00"
+                    android:textColor="@color/tv_common_red"
+                    android:textSize="@dimen/tv_shopcart"/>
+
+                <TextView
+                    android:id="@+id/tv_shopcart_goodsitem_discountprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$999.00"
+                    android:textColor="#c8c8c8"
+                    android:textSize="@dimen/tv_shopcart"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="27dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_shopcart_item_sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/shopcart_goodsitem_sub"/>
+
+
+                <TextView
+                    android:id="@+id/tv_shopcart_item_count"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textColor="@color/tv_shopcart"
+                    android:textSize="@dimen/tv_shopcart"/>
+
+                <ImageView
+                    android:id="@+id/iv_shopcart_item_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/shopcart_goodsitem_add"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_shopcart_item_del"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@mipmap/shopcart_goodsitem_delete"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/tv_shopcart"/>
+    </com.mcxtzhang.swipemenulib.SwipeMenuLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="21dp"
+        android:background="@mipmap/shopcart_goodsitem_divider"
+        ></ImageView>
+</LinearLayout>

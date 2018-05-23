@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1136/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order
+END
+CustomerServiceDialogFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1015/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/CustomerServiceDialogFragment.java
+END
+OrderFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1133/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/OrderFragment.java
+END
+WaitPayOrderFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1136/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/WaitPayOrderFragment.java
+END
+OrderClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/943/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/OrderClient.java
+END
+IOrderContract.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1032/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/IOrderContract.java
+END
+TabItemInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/971/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/TabItemInfo.java
+END
+NoUnderlineSpan.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1105/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/NoUnderlineSpan.java
+END
+NotificationDialogFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/930/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/NotificationDialogFragment.java
+END
+OrderAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/971/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/OrderAdapter.java
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1133/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/brand/presenter
+END
+BrandDetailPresenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1133/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/brand/presenter/BrandDetailPresenter.java
+END
+BrandGoodsListPresenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1133/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/brand/presenter/BrandGoodsListPresenter.java
+END
+BrandShopHotPresenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1133/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/brand/presenter/BrandShopHotPresenter.java
+END
+IBrandGoodsListContract.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1133/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/brand/presenter/IBrandGoodsListContract.java
+END
+IBrandShopListContract.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1133/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/brand/presenter/IBrandShopListContract.java
+END
+IBrandDetailContract.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1133/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/brand/presenter/IBrandDetailContract.java
+END

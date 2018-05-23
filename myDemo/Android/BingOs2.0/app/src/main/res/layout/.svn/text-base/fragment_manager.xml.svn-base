@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#F4F4F4"
+    android:paddingBottom="@dimen/dp_10"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@mipmap/manager_left_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="41dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/manager_head_icon" />
+
+        <TextView
+            style="@style/manager_txt"
+            android:layout_marginBottom="44dp"
+            android:text="HI:葛优" />
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/personal_qr" />
+
+        <TextView
+            style="@style/manager_txt"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="扫描关注二维码" />
+
+        <TextView
+            style="@style/manager_txt"
+            android:layout_marginBottom="24dp"
+            android:text="400-5555-555" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@mipmap/manager_check_update"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:text="检查更新"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <TextView
+            style="@style/manager_txt"
+            android:layout_marginBottom="14dp"
+            android:text="Software Version V2.0.0" />
+
+        <TextView
+            style="@style/manager_txt"
+            android:layout_marginBottom="25dp"
+            android:text="Hardware Version Bislao1_3121-22121" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/manager_title" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/manager_vp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

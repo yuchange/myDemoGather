@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bingstar.bingmall.video.lib.SynLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     android:id="@+id/order_detail_syn"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+                                     android:background="@drawable/order_detail">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/order_detail"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="@dimen/ads_space_bottom_v">
+
+            <TextView
+                android:id="@+id/order_detail_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/order_detail_title"
+                android:gravity="center"
+                android:paddingBottom="@dimen/order_listItem_marginBottom"
+                android:text="@string/order_info_title"
+                android:textSize="@dimen/order_listItem_text_size"/>
+
+            <ListView
+                android:id="@+id/order_detail_list"
+                android:layout_width="wrap_content"
+                android:layout_height="420dp"
+                android:layout_below="@id/order_detail_title1"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/order_detail_price"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/order_detail_total_padding_left">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ads_space_bottom_v"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/order_info_money"
+                            android:textColor="@color/order_money"/>
+
+                        <TextView
+                            android:id="@+id/order_detail_limitmoney"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/order_bottom_money"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/cycle_lefttrv_top"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="运        费："
+                            android:textColor="@color/order_money"/>
+
+                        <TextView
+                            android:id="@+id/order_detail_postage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/order_bottom_money"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/cycle_lefttrv_top"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="优        惠："
+                            android:textColor="@color/order_money"/>
+
+                        <TextView
+                            android:id="@+id/order_detail_preferential"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/order_bottom_money"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/order_info_text_w"
+                        android:layout_height="@dimen/cart_titleitem_view_w"
+                        android:layout_marginTop="@dimen/ads_space_bottom_v"
+                        android:background="@color/order_money"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ads_space_bottom_v"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/order_info_limitmoney"
+                            android:textColor="@color/order_title"
+                            android:textSize="@dimen/order_info_view_text_size"/>
+
+                        <TextView
+                            android:id="@+id/order_detail_money"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/CartFreight"
+                            android:textSize="@dimen/order_info_view_text_size"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/ads_space_bottom_v"
+                    android:orientation="vertical"
+                    android:paddingRight="@dimen/order_detail_total_padding_left">
+
+                    <TextView
+                        android:id="@+id/order_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/order_title"
+                        android:textSize="@dimen/ads_space_bottom_v"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:text="@string/service_hotline"
+                        android:textColor="@color/order_applay_answer"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/cycle_leftrv_height"
+                    android:paddingRight="@dimen/cart_griditem_iv_marginleft">
+
+                    <ImageView
+                        android:id="@+id/order_pay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/order_detail_go_pay"/>
+
+                    <ImageView
+                        android:id="@+id/order_buy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/order_detail_secondbuy"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="115dp"
+                    android:layout_toLeftOf="@id/relative">
+
+                    <ImageView
+                        android:id="@+id/order_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/order_delete_image"
+                        android:visibility="gone"/>
+
+                    <ImageView
+                        android:id="@+id/order_apply_after"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/order_detail_apply_after"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!--物流查询-->
+        <LinearLayout
+            android:id="@+id/logistics_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="110dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/logistics_linear_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/logistics_top"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingRight="30dp"
+                        android:text="已签收"
+                        android:textColor="@color/addr_manage_adapter"
+                        android:textSize="20dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/logistics_image"
+                            android:layout_width="95dp"
+                            android:layout_height="95dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/logistics_product_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/addr_manage_adapter"/>
+
+                            <TextView
+                                android:id="@+id/logistics_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/addr_manage_adapter"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="430dp"
+                    android:background="@drawable/logistics_bottom">
+
+                    <ListView
+                        android:id="@+id/logistics_detail_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="55dp"
+                        android:paddingBottom="70dp"
+                        android:scrollbars="none"/>
+
+                    <TextView
+                        android:id="@+id/logistics_error_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="55dp"
+                        android:gravity="center"
+                        android:paddingBottom="70dp"
+                        android:text="暂无物流信息！"
+                        android:textColor="@color/logistics_error_text"
+                        android:textSize="20sp"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</com.bingstar.bingmall.video.lib.SynLinearLayout>

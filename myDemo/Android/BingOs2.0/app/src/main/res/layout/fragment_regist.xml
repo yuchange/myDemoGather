@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#919191"
+        android:textSize="17sp"
+        android:text="请绑定手机号获取更多服务"/>
+
+    <EditText
+        android:id="@+id/regist_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入手机号"
+        android:paddingLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:inputType="number"
+        android:background="@mipmap/regist_circle_sms"
+        android:textSize="17sp"
+        android:textColorHint="#e1e1e1"
+        android:textCursorDrawable="@drawable/color_cursor"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+    <EditText
+        android:id="@+id/regist_sms_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/regist_circle"
+        android:hint="请输入验证码"
+        android:inputType="number"
+        android:paddingLeft="30dp"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:layout_marginRight="20dp"
+        android:textColorHint="#e1e1e1"
+        android:textSize="17sp" />
+        <TextView
+            android:id="@+id/regist_sms_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送验证码"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:background="@mipmap/regist_send_sms"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/regist_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="@mipmap/regist_btn"
+        android:layout_marginTop="20dp"
+        android:textSize="35sp"/>
+
+</LinearLayout>

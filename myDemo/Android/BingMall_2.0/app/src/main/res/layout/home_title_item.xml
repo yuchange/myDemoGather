@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:layout_margin="@dimen/cart_titleitem_linear_marginleft"
+    android:background="@drawable/home_title_bg"
+    android:textColor="@drawable/home_title_text"
+    android:textSize="@dimen/cart_titleitem_tv_textsize">
+
+</TextView>

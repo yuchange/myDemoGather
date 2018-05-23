@@ -1,0 +1,72 @@
+apply plugin: 'com.android.library'
+apply plugin: 'me.tatarka.retrolambda'
+
+//服务器地址配置
+def DEBUG_HOST = rootProject.ext.host["debug"]
+def RELEASE_HOST = rootProject.ext.host["release"]
+
+//图片地址配置
+def DEBUG_IMG= rootProject.ext.img["debug"]
+def RELEASE_IMG = rootProject.ext.img["release"]
+
+//h5地址配置
+def DEBUG_HTML= rootProject.ext.webHtml["debug"]
+def RELEASE_HTML = rootProject.ext.webHtml["release"]
+android {
+
+    publishNonDefault true
+
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+    buildTypes {
+        debug {
+            buildConfigField("String", "BUILD_FLAG", "\"Debug\"")
+            buildConfigField "boolean", "release", "false"
+            buildConfigField "String", "HOSTNAME", "\"${DEBUG_HOST}\""
+            buildConfigField "String", "URL_IMAGE", "\"${DEBUG_IMG}\""
+            buildConfigField "String", "WEB_HTML", "\"${DEBUG_HTML}\""
+        }
+
+        release {
+            buildConfigField("String", "BUILD_FLAG", "\"haier\"")
+            buildConfigField "boolean", "release", "true"
+            buildConfigField "String", "HOSTNAME", "\"${RELEASE_HOST}\""
+            buildConfigField "String", "URL_IMAGE", "\"${RELEASE_IMG}\""
+            buildConfigField "String", "WEB_HTML", "\"${RELEASE_HTML}\""
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    testCompile 'junit:junit:4.12'
+    compile 'com.lzy.net:okgo:3.0.4'
+
+    compile 'com.lzy.net:okrx2:2.0.2'
+    compile 'com.github.tianzhijiexian:logger:1.1.8'
+    compile 'com.jakewharton.timber:timber:4.3.0'
+    compile 'com.github.ikidou:TypeBuilder:1.0'
+    compile 'com.google.code.gson:gson:2.8.1'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+}

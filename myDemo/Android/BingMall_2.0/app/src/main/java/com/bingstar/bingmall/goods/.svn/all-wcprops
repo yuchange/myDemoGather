@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/718/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/goods
+END
+IGoodsListContract.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/goods/IGoodsListContract.java
+END
+GoodsListAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/597/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/goods/GoodsListAdapter.java
+END
+GoodsVideoAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/499/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/goods/GoodsVideoAdapter.java
+END
+GoodsDetailFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/654/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/goods/GoodsDetailFragment.java
+END
+GoodsListPresenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/718/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/goods/GoodsListPresenter.java
+END
+GoodsListFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/718/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/goods/GoodsListFragment.java
+END
+GoodsImgAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/499/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/goods/GoodsImgAdapter.java
+END

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_item_logistics_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="11:00"
+            android:textColor="@color/c_919191"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:id="@+id/tv_item_logistics__date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_item_logistics_time"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="10_ee"
+
+            android:textColor="@color/c_919191"
+            android:textSize="12dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:id="@+id/view_logistics_line"
+            android:layout_width="1dp"
+            android:layout_height="134dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/c_919191"/>
+
+
+        <TextView
+            android:id="@+id/tv_item_logistics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/gray_node"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+
+
+            />
+
+
+    </LinearLayout>
+
+
+    <com.zyf.bings.bingos.ui.NoClickTextView
+        android:id="@+id/tv_item_logistics__detail_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="25dp"
+        android:autoLink="all"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="10_ee"
+        android:textColor="@color/c_919191"
+        android:textColorLink="@color/c_FE7400"
+        android:textSize="12sp"/>
+</LinearLayout>

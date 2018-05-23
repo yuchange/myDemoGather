@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/694/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/user/addr/AddrManage
+END
+AddrManageAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/user/addr/AddrManage/AddrManageAdapter.java
+END
+AddrManageFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/597/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/user/addr/AddrManage/AddrManageFragment.java
+END
+AddrManageInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/user/addr/AddrManage/AddrManageInfo.java
+END
+AddrManageInfoBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/user/addr/AddrManage/AddrManageInfoBean.java
+END
+AddrManagePresenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/694/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/user/addr/AddrManage/AddrManagePresenter.java
+END
+AddrManageClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/user/addr/AddrManage/AddrManageClient.java
+END
+UpdateAddrUsedPresenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/user/addr/AddrManage/UpdateAddrUsedPresenter.java
+END
+IAddrManageContract.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/user/addr/AddrManage/IAddrManageContract.java
+END

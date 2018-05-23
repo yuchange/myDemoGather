@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/597/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/discount
+END
+MViewPagerAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/discount/MViewPagerAdapter.java
+END
+DiscountAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/discount/DiscountAdapter.java
+END
+IDiscountContract.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/discount/IDiscountContract.java
+END
+DiscountPresent.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/discount/DiscountPresent.java
+END
+DiscountFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/597/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/discount/DiscountFragment.java
+END

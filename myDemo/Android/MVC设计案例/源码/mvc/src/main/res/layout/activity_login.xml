@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MVCLoginActivity">
+
+
+
+ <ImageView
+     android:layout_marginTop="56dp"
+     android:layout_gravity="center_horizontal"
+     android:src="@drawable/logo"
+     android:layout_width="100dp"
+     android:layout_height="100dp" />
+
+ <android.support.design.widget.TextInputLayout
+  android:layout_marginTop="24dp"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+  <EditText
+      android:id="@+id/edit_account"
+      android:hint="用户名"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+ </android.support.design.widget.TextInputLayout>
+
+ <android.support.design.widget.TextInputLayout
+     android:layout_marginTop="24dp"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+  <EditText
+      android:id="@+id/edit_pwd"
+      android:inputType="textPassword"
+      android:hint="密码"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+ </android.support.design.widget.TextInputLayout>
+
+ <android.support.v7.widget.AppCompatButton
+     android:layout_marginTop="24dp"
+     android:id="@+id/btn_login"
+     android:text="登陆"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" />
+ <android.support.v7.widget.AppCompatButton
+     android:layout_marginTop="24dp"
+     android:id="@+id/btn_clear"
+     android:text="清空"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" />
+</LinearLayout>

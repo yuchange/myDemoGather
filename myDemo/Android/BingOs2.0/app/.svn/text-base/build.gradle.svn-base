@@ -1,0 +1,129 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
+    defaultConfig {
+        applicationId "com.zyf.bings.bingos20"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    //加快gradle的编译速度
+    dexOptions {
+        preDexLibraries true
+        javaMaxHeapSize "4g"
+        dexInProcess = true
+    }
+
+    buildTypes {
+        debug {
+
+            /**bingOS版本**/
+
+            buildConfigField("String", "BUILD_FLAG", "\"Debug\"")
+            /* manifestPlaceholders = [
+                     "BAIDUMAP_KEY": "hd6QVTEOWY9bhvQg7cjYKXXN7gte88lM",    //临时 后期替换   HpD5ecRUHXaEnaozIsWj83fyZlGaRZ2D
+                     "BAIDUSTAT_KEY"    : "28bc3a3f85",     //百度统计key 测试
+                     "BAIDUSTAT_CHANNEL": "haier"     //百度统计渠道
+             ]*/
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+
+        release {
+
+            /**海尔版本**/
+
+            buildConfigField("String", "BUILD_FLAG", "\"haier\"")
+            /*manifestPlaceholders = [
+                    "BAIDUMAP_KEY": "stABiqyE5t6xIt1bnGGq3sG3xBAW9T5k", //7kgiNOFA4w0uFpY5lzv9wXsyqNmgbkew  stABiqyE5t6xIt1bnGGq3sG3xBAW9T5k
+                    "BAIDUSTAT_KEY"    : "5d879505b3",     //百度统计key
+                    "BAIDUSTAT_CHANNEL": "haier"     //百度统计渠道
+            ]*/
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            // signingConfig signingConfigs.release
+        }
+
+        //多渠道打包
+        applicationVariants.all { variant ->
+
+            //动态替换apk文件名字
+            variant.outputs.each { output ->
+                def outputFile = output.outputFile
+                if (outputFile != null && outputFile.name.endsWith(".apk")) {
+                    def fileName
+                    if (variant.buildType.name == "release") {
+                        fileName = "${defaultConfig.versionName}_release.apk"
+                    } else if (variant.buildType.name == "develop") {
+                        fileName = "${defaultConfig.versionName}_develop.apk"
+                    } else {
+                        fileName = "${defaultConfig.versionName}_debug.apk"
+                    }
+                    println "-------替换apk文件名字----------"
+                    output.outputFile = new File(outputFile.parent, fileName)
+                }
+
+                // 删除unaligned apk
+                if (output.zipAlign != null) {
+                    output.zipAlign.doLast {
+                        output.zipAlign.inputFile.delete()
+                    }
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    testCompile 'junit:junit:4.12'
+    compile 'com.google.code.gson:gson:2.8.1'
+    compile files('libs/Baidu_Mtj_3.7.6.1.jar')
+    compile 'com.android.support:recyclerview-v7:25.0.1'
+    //通用适配器
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.28'
+    //butterknife 注解
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //图片加载
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //网络库
+    debugCompile project(path: ':bingos_libnet', configuration: 'debug')
+    releaseCompile project(path: ':bingos_libnet', configuration: 'release')
+    compile 'com.google.zxing:core:3.3.0'
+    //侧滑删除
+    compile 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.2.5'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.contrarywind:Android-PickerView:3.2.6'
+    //flex布局
+    compile 'com.google.android:flexbox:0.3.0'
+    compile 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
+    // 刷新框架
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+    // tab框架
+    compile 'com.android.support:design:26.0.0-alpha1'
+    compile 'com.github.hackware1993:MagicIndicator:1.5.0'
+}
+

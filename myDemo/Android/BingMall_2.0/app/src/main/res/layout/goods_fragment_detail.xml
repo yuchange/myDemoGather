@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bingstar.bingmall.video.lib.SynLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vipager="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/goods_detail_syn_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/goods_fragment_detail_relative_w"
+            android:layout_height="500dp"
+            android:layout_marginLeft="30dp">
+
+            <com.bingstar.bingmall.goods.view.MutableGoodsViewPager
+                android:id="@+id/goods_detail_img"
+                android:layout_width="@dimen/goods_fragment_detail_relative_w"
+                android:layout_height="@dimen/goods_fragment_detail_relative_w"
+                vipager:dotView="@drawable/ads_main_dot"
+                vipager:viewType="bottomOfView"/>
+
+            <LinearLayout
+                android:id="@+id/goods_good_linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/ads_space_bottom_v"
+                android:layout_marginLeft="@dimen/delete_btn_marginleft"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/goods_detail_support"
+                    android:layout_width="@dimen/cart_fragment_titlerv_h"
+                    android:layout_height="@dimen/cart_fragment_titlerv_h"
+                    android:background="@drawable/goods_detail_support_bg"
+                    android:clickable="false"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginBottom="@dimen/goods_detail_marginbotom1"
+                android:layout_marginLeft="@dimen/order_listItem_marginBottom2"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/goods_detail_flag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/goods_detail_discountExplain_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/kuang"
+                    android:gravity="center"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="2dp"
+                    android:text="劵"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/goods_detail_discountExplain_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="7dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/order_listItem_marginBottom2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/goods_detail_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:textColor="@color/goodsDetailName"
+                    android:textSize="37sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/goods_detail_smallName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:maxLines="1"
+                    android:textColor="@color/goodsDetailName"
+                    android:textSize="22sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/order_listItem_marginBottom2"
+                android:layout_marginTop="@dimen/goods_detail_marginbotom1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/goods_detail_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/goodsDetailLimitPrice"
+                    android:textSize="@dimen/goods_fragment_detail_relative_textsize"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/goods_detail_price_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/cart_titleitem_tv_padleftright"
+                    android:layout_marginRight="@dimen/cart_titleitem_tv_padleftright"
+                    android:text="99"
+                    android:textColor="@color/goodsDetailPrice"
+                    android:textSize="@dimen/goods_detail_smalltitle_size"></TextView>
+
+                <TextView
+                    android:id="@+id/goods_detail_promotion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="9折"
+                    android:textColor="@color/addr_manage_adapter_name"
+                    android:textSize="@dimen/goods_fragment_detail_relative_textsizesomal"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/goods_detail_promotiontime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/order_listItem_marginBottom2"
+                android:maxLines="1"
+                android:textColor="@color/goodsDetailLimitPrice"
+                android:textSize="@dimen/cart_titleitem_tv_textsize"/>
+
+            <TextView
+                android:id="@+id/goods_detail_describe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/order_listItem_marginBottom2"
+                android:layout_marginTop="@dimen/goods_detail_marginbotom2"
+                android:maxLines="2"
+                android:textColor="@color/goodsDetailName"
+                android:textSize="26sp"/>
+
+            <!--<TextView-->
+            <!--android:id="@+id/goods_detail_freight"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/cart_griditem_iv_marginleft"-->
+            <!--android:text="@string/goods_freight"-->
+            <!--android:textColor="@color/goodsDetailLimitPrice"-->
+            <!--android:textSize="@dimen/cart_fragment_addr_nametv_textsize" />-->
+
+            <LinearLayout
+                android:id="@+id/goods_detail_numlinear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/order_listItem_marginBottom2"
+                android:layout_marginTop="@dimen/goods_detail_marginbotom2"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/goods_detail_num_decrease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/goodsdetail_decrease"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/goods_detail_num"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/cycle_lefttrv_top"
+                    android:layout_marginRight="@dimen/cycle_lefttrv_top"
+                    android:background="@drawable/goods_num_bg"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:longClickable="false"
+                    android:maxLength="9"
+                    android:text="1"
+                    android:textSize="@dimen/goods_fragment_detail_relative_textsizesomal"
+                    android:textStyle="bold"/>
+
+                <ImageButton
+                    android:id="@+id/goods_detail_num_increase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/goodsdetail_increase"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/goods_detail_op"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/discount_card_text_w"
+                android:layout_marginLeft="@dimen/goods_detail_marginbotom2"
+                android:layout_marginTop="13dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/goods_detail_add_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/good_detail_add"/>
+
+                <ImageView
+                    android:id="@+id/goods_detail_just_buy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/goods_detail_onekeyg"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</com.bingstar.bingmall.video.lib.SynLinearLayout>

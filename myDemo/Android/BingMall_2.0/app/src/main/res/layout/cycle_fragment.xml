@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bingstar.bingmall.video.lib.SynLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/home_synLinearlayout">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.bingstar.bingmall.home.HomeTitleView
+            android:id="@+id/home_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.bingstar.bingmall.home.HomeTitleView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/cycle_back"
+            android:orientation="horizontal">
+            <com.bingstar.bingmall.video.lib.SynLinearLayout
+                android:layout_marginLeft="@dimen/order_infofragment_pricetvmargintop"
+                android:layout_marginTop="@dimen/cycle_fragment_recyclerview_mt"
+                android:paddingBottom="@dimen/delete_margintop"
+                android:layout_width="@dimen/cycle_fragment_recyclerview_w"
+                android:layout_height="@dimen/cycle_fragment_recyclerview_h"
+                android:paddingRight="@dimen/ads_space_center_h"
+                android:paddingLeft="@dimen/ads_space_bottom_v"
+                android:paddingTop="@dimen/cycle_fragment_recyclerview_pt"
+                android:background="@drawable/cycle_left"
+                android:id="@+id/synLinearlayout_recycleview">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/cyclefragment_left_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                </android.support.v7.widget.RecyclerView>
+            </com.bingstar.bingmall.video.lib.SynLinearLayout>
+            <com.bingstar.bingmall.video.lib.SynLinearLayout
+                android:id="@+id/synLinearlayout_recycleviewQ"
+                android:paddingBottom="@dimen/cart_fragment_titlerv_h"
+                android:paddingRight="@dimen/ads_space_center_h"
+                android:paddingLeft="@dimen/ads_space_bottom_v"
+                android:paddingTop="@dimen/cycle_fragment_recyclerview_pt"
+                android:background="@drawable/cycle_right"
+                android:layout_marginLeft="@dimen/order_infofragment_receivertvmargintop"
+                android:layout_marginTop="@dimen/cycle_fragment_recyclerview_mt"
+                android:layout_width="@dimen/cycle_fragment_recyclerviewr_pt"
+                android:layout_height="@dimen/cycle_fragment_recyclerview_h">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/cyclefragment_right_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                </android.support.v7.widget.RecyclerView>
+            </com.bingstar.bingmall.video.lib.SynLinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</com.bingstar.bingmall.video.lib.SynLinearLayout>

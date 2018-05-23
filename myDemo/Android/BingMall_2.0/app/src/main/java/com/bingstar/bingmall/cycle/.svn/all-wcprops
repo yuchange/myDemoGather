@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/499/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/cycle
+END
+ICycleContract.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/cycle/ICycleContract.java
+END
+CycleLeftRVAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/499/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/cycle/CycleLeftRVAdapter.java
+END
+CycleFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/493/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/cycle/CycleFragment.java
+END
+CycleRightRVAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/499/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/cycle/CycleRightRVAdapter.java
+END
+CyclePresenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/cycle/CyclePresenter.java
+END

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cycle_back">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/order_listItem_height"
+        android:background="@drawable/addr_title"
+        android:text="@string/add_order_manager_title"
+        android:textSize="@dimen/ads_space_top_h"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/add_order_addr_linear_pt"
+        android:layout_marginRight="@dimen/add_order_addr_linear_pt"
+        android:layout_marginTop="@dimen/ads_space_top_h"
+        android:paddingBottom="@dimen/ads_space_bottom_v"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/addr_recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/add_order_addr_linear_pt"
+        android:layout_marginRight="@dimen/add_order_addr_linear_pt"
+        android:background="@drawable/addr_recycle"
+        android:paddingRight="@dimen/ads_space_top_h"
+        android:paddingLeft="@dimen/ads_space_top_h"
+        android:paddingBottom="@dimen/cycle_leftrv_leftivheight"
+        ></android.support.v7.widget.RecyclerView>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="oval">//指定是椭圆,我们只要在使用的时候讲宽高设置为相等就是园了
+    <corners android:radius="5dip"/>
+    <solid android:color="@color/colorAccent"/>
+    //填充颜色
+</shape>

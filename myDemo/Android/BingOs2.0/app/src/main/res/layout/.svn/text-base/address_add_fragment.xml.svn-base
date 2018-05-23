@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zyf.bings.bingos.ui.ResizeScrollVIew xmlns:android="http://schemas.android.com/apk/res/android"
+                                          xmlns:app="http://schemas.android.com/apk/res-auto"
+                                          xmlns:tools="http://schemas.android.com/tools"
+                                          android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/address_addfragment_bg"
+        android:orientation="vertical"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_addaddress_close"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="31dp"
+                android:layout_marginTop="26dp"
+                android:src="@mipmap/address_addfragment_close"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/address_add_item_h"
+            android:layout_marginLeft="@dimen/address_add_leftmargin"
+            android:layout_marginTop="38dp"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="@dimen/address_add_item_w"
+                android:layout_height="@dimen/address_add_item_h"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address_addinfo_name"
+                    android:textColor="@color/tv_add_address"
+                    android:textSize="@dimen/common_tv_size"/>
+
+                <EditText
+                    android:id="@+id/et_address_add_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@null"
+                    android:maxLength="50"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textColor="@color/et_add_address"
+                    android:textSize="@dimen/common_tv_size"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/address_add_item_w"
+                android:layout_height="@dimen/address_add_item_h"
+                android:layout_marginLeft="110dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address_addinfo_tel"
+                    android:textColor="@color/tv_add_address"
+                    android:textSize="@dimen/common_tv_size"/>
+
+                <EditText
+                    android:id="@+id/et_address_add_tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@null"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/et_add_address"
+                    android:textSize="@dimen/common_tv_size"
+                    tools:ignore="TextFields"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="@dimen/address_add_item_h"
+            android:layout_marginLeft="@dimen/address_add_leftmargin"
+            android:layout_marginTop="57dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address_addinfo_location"
+                android:textColor="@color/tv_add_address"
+                android:textSize="@dimen/common_tv_size"/>
+
+            <EditText
+                android:id="@+id/et_address_add_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textColor="@color/et_add_address"
+                android:textSize="@dimen/common_tv_size"/>
+
+            <LinearLayout
+                android:id="@+id/linear_address_select"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:gravity="start"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/address_addfragment_down"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="650dp"
+            android:layout_height="@dimen/address_add_item_h"
+            android:layout_marginLeft="@dimen/address_add_leftmargin"
+            android:layout_marginTop="60dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address_addinfo_detail_location"
+                android:textColor="@color/tv_add_address"
+                android:textSize="@dimen/common_tv_size"/>
+
+            <EditText
+                android:id="@+id/et_address_add_detaillocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@null"
+                android:imeOptions="actionDone"
+                android:maxLength="100"
+                android:singleLine="true"
+                android:textColor="@color/et_add_address"
+                android:textSize="@dimen/common_tv_size"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/address_add_item_w"
+            android:layout_height="@dimen/address_add_item_h"
+            android:layout_marginLeft="@dimen/address_add_leftmargin"
+            android:layout_marginTop="63dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address_addinfo_code"
+                android:textColor="@color/tv_add_address"
+                android:textSize="@dimen/common_tv_size"/>
+
+            <EditText
+                android:id="@+id/et_address_add_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@null"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:textColor="@color/et_add_address"
+                android:textSize="@dimen/common_tv_size"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_address_add_confirm"
+            android:layout_width="188dp"
+            android:layout_height="63dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="72dp"
+            android:background="@mipmap/address_btn_bgb"
+            android:text="@string/confirm"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/common_tv_size"/>
+    </LinearLayout>
+</com.zyf.bings.bingos.ui.ResizeScrollVIew>
+

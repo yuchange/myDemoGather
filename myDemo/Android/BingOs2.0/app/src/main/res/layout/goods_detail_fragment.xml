@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zyf.bings.bingos.ui.statelayout.ProgressFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:progressActivity="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@mipmap/order_confirm_fragment_bg"
+    >
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="180dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="71dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.zyf.bings.bingos.ui.banner.Banner
+                    android:id="@+id/banner_goods_detail"
+                    android:layout_width="400dp"
+                    android:layout_height="400dp"
+                    progressActivity:indicator_drawable_selected="@mipmap/banner_dot_select"
+                    progressActivity:indicator_drawable_unselected="@mipmap/banner_dot_unselect"
+                    progressActivity:indicator_height="12dp"
+                    progressActivity:indicator_margin="11dp"
+                    progressActivity:indicator_width="12dp"
+                    progressActivity:layout_id="@layout/custom_banner"></com.zyf.bings.bingos.ui.banner.Banner>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginLeft="67dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_goodsdetail_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:maxLines="1"
+                        android:text="调理身体 有益身体健康"
+                        android:textColor="@color/tv_goods_detail_gray"
+                        android:textSize="@dimen/tv_goods_detail_small"/>
+
+                    <TextView
+                        android:id="@+id/tv_goodsdetail_subtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:maxLines="1"
+                        android:text="Swisseman春风十里不如你40集"
+                        android:textColor="@color/tv_goods_detail_black"
+                        android:textSize="@dimen/tv_goods_detail_mid"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:text="@string/spec"
+                        android:textColor="@color/tv_goods_detail_gray"
+                        android:textSize="@dimen/tv_goods_detail_small"/>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:scrollbars="none">
+
+                        <com.google.android.flexbox.FlexboxLayout
+                            android:id="@+id/flex_goods_detail_spec"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            progressActivity:alignContent="stretch"
+                            progressActivity:flexDirection="row"
+                            progressActivity:flexWrap="nowrap">
+
+
+                        </com.google.android.flexbox.FlexboxLayout>
+
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:text="@string/count"
+                        android:textColor="@color/tv_goods_detail_gray"
+                        android:textSize="@dimen/common_tv_size"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <ImageButton
+                            android:id="@+id/iv_goodsdetail_decre"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:src="@mipmap/goods_detail_decre"/>
+
+                        <TextView
+                            android:id="@+id/tv_goods_detail_count"
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textSize="@dimen/common_tv_size"/>
+
+                        <ImageButton
+                            android:id="@+id/iv_goodsdetail_incre"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:src="@mipmap/goods_detail_incre"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="31dp"
+                            android:text="剩余库存: "
+                            android:textColor="@color/tv_goods_detail_gray"
+                            android:textSize="@dimen/common_tv_size"/>
+
+                        <TextView
+                            android:id="@+id/tv_goods_detail_stock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:textColor="@color/tv_goods_detail_gray"
+                            android:textSize="@dimen/common_tv_size"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_goods_detail_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="¥299.00"
+                            android:textColor="@color/tv_common_red"
+                            android:textSize="30dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tv_goods_detail_discountprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="¥199.00"
+                            android:textColor="@color/tv_goods_detail_gray"
+                            android:textSize="20dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="450dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_goods_detail_buy"
+                            android:layout_width="210dp"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="18dp"
+                            android:background="@mipmap/goods_detail_btn_bg"
+                            android:text="立即购买"
+                            android:textColor="@android:color/white"
+                            android:textSize="30dp"
+                            android:textStyle="bold"/>
+
+                        <com.google.android.flexbox.FlexboxLayout
+                            android:id="@+id/flex_goods_detail_special"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="13dp"
+                            progressActivity:alignContent="center"
+                            progressActivity:alignItems="center"
+                            progressActivity:flexWrap="wrap"></com.google.android.flexbox.FlexboxLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="48dp"
+                android:layout_marginTop="48dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:id="@+id/linear_goods_bottom_spec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_goods_bottom1_divider"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/goods_detail_divider"/>
+
+                    <TextView
+                        android:id="@+id/tv_goods_bottom_spec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="商品参数"
+                        android:textColor="@color/tv_goods_detail_gray"
+                        android:textSize="@dimen/tv_goods_detail_small"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_goods_bottom_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp">
+
+                    <ImageView
+                        android:id="@+id/iv_goods_bottom2_divider"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/goods_detail_divider"/>
+
+                    <TextView
+                        android:id="@+id/tv_goods_bottom_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="图文详情"
+                        android:textColor="@color/tv_goods_detail_gray"
+                        android:textSize="@dimen/tv_goods_detail_small"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_goods_detail_picshow"
+                android:layout_width="920dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="120dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!-- <ImageView
+                     android:id="@+id/iv_goods_detail_bottom"
+                     android:layout_width="match_parent"
+                     android:layout_height="499dp"
+                     android:scaleType="fitXY"
+                     android:src="@mipmap/goods_detail_pic"/>-->
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:id="@+id/flex_goods_detail_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="6dp"
+                    progressActivity:flexWrap="wrap"/>
+
+                <TextView
+                    android:id="@+id/tv_goods_detail_picdetail_nodate"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:gravity="center"
+                    android:text="暂无图文详情"
+                    android:textColor="@color/tv_goods_detail_black"
+                    android:textSize="20sp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_goods_detail_specshow"
+                android:layout_width="920dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="120dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.zyf.bings.bingos.ui.TableView
+                    android:id="@+id/tableview_custom"
+                    android:layout_width="920dp"
+                    android:layout_height="wrap_content"
+                    progressActivity:dividerColor="@color/tv_goods_detail_gray"
+                    progressActivity:dividerWidth="1.5dp"
+                    progressActivity:rowHeight="70dp"
+                    progressActivity:textColor="@color/tv_goods_detail_black"
+                    progressActivity:textSize="17dp"/>
+
+                <TextView
+                    android:id="@+id/tv_goods_detail_spec_nodate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:gravity="center"
+                    android:typeface="monospace"
+                    android:text="暂无商品参数"
+                    android:textColor="@color/tv_goods_detail_black"
+                    android:textSize="20sp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</com.zyf.bings.bingos.ui.statelayout.ProgressFrameLayout>

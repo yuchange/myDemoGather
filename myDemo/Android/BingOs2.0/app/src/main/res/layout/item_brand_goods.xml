@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="404dp"
+        android:layout_height="404dp">
+    <ImageView
+        android:id="@+id/item_brand_goods_img"
+        android:layout_width="404dp"
+        android:layout_height="404dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/item_brand_goods_img" />
+
+        <ImageView
+            android:id="@+id/item_brand_goods_soldout"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/sold_out"
+            android:scaleType="fitXY"/>
+</FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item_brand_goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:minLines="2"
+            android:typeface="monospace"
+            android:textColor="#919191"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/item_brand_goods_nPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_brand_goods_name"
+            android:textColor="#ff5454"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/item_brand_goods_rPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/item_brand_goods_nPrice"
+            android:layout_marginLeft="5dp"
+            android:text="1111"
+            android:layout_toRightOf="@id/item_brand_goods_nPrice"
+            android:textColor="#B2B2B2"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+</LinearLayout>

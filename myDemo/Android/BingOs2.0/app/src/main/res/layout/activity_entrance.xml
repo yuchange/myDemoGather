@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/entrance_bg"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/temperature_cang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="冷藏室: 2℃"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/temperature_dong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/temperature_cang"
+        android:layout_toRightOf="@id/temperature_cang"
+        android:text="冷冻室: -15℃"
+        android:textColor="#FFFFFF" />
+
+    <View
+        android:id="@+id/entrance_view_left"
+        android:layout_width="6dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="138dp"
+        android:layout_marginTop="138dp"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/entrance_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/entrance_view_left"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@id/entrance_view_left"
+        android:text="01"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+
+    <View
+        android:id="@+id/entrance_view_left_b"
+        android:layout_width="15dp"
+        android:layout_height="3dp"
+        android:layout_below="@id/entrance_month"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="21dp"
+        android:layout_toRightOf="@id/entrance_view_left"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/entrance_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/entrance_month"
+        android:layout_marginTop="21dp"
+        android:layout_toRightOf="@id/entrance_view_left_b"
+        android:text="05"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/entrance_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:text="9:41 PM"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/entrance_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/entrance_view_left"
+        android:layout_marginRight="106dp"
+        android:fontFamily="monospace"
+        android:text="进口三文鱼 200G"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/entrance_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/entrance_title1"
+        android:layout_marginRight="106dp"
+        android:text="限时五折特惠"
+        android:textColor="#FFFFFF"
+        android:textSize="63sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/entrance_title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/entrance_title2"
+        android:layout_marginRight="106dp"
+        android:text="冰果优品特供"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/entrance_title4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/entrance_title3"
+        android:layout_marginRight="109dp"
+        android:fontFamily="monospace"
+        android:text="口感均衡"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/entrance_title5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/entrance_title3"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/entrance_title4"
+        android:fontFamily="monospace"
+        android:text="营养丰富"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/entrance_title3"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/entrance_title5"
+        android:fontFamily="monospace"
+        android:text="新鲜美味"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <View
+        android:id="@+id/entrance_view_left_c"
+        android:layout_width="40dp"
+        android:layout_height="6dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/entrance_title4"
+        android:layout_marginRight="109dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/entrance_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/entrance_view_left_c"
+        android:layout_marginRight="108dp"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/entrance_buy"
+        android:gravity="center"
+        android:text="点击购买"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/entrance_choose"/>
+        <RelativeLayout
+            android:id="@+id/entrance_goods"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="60dp"
+            android:background="@mipmap/entrance_goods_bg">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_centerInParent="true"
+                android:drawablePadding="7dp"
+                android:drawableTop="@mipmap/entrance_goods"
+                android:textColor="#FFFFFF"
+                android:text="冰果优品"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/entrance_life"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="110dp"
+            android:background="@mipmap/entrance_life_bg">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:drawablePadding="7dp"
+                android:layout_centerInParent="true"
+                android:drawableTop="@mipmap/entrance_life"
+                android:textColor="#FFFFFF"
+                android:text="冰果生活"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/entrance_manager"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="110dp"
+            android:background="@mipmap/entrance_manager_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="7dp"
+                android:drawableTop="@mipmap/entrance_manager"
+                android:text="冰果管家"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/entrance_entertainment"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="110dp"
+            android:background="@mipmap/entrance_entertainment_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="7dp"
+                android:drawableTop="@mipmap/entrance_entertainment"
+                android:text="冰果娱乐"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/entrance_order"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="80dp"
+        android:layout_below="@id/entrance_buy"
+        android:layout_marginLeft="80dp"
+        android:src="@mipmap/entrance_order"
+        android:layout_alignEnd="@+id/temperature_cang" />
+
+    <ImageView
+        android:id="@+id/entrance_talk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_alignTop="@id/entrance_order"
+        android:layout_marginLeft="75dp"
+        android:layout_toRightOf="@id/entrance_order"
+        android:src="@mipmap/entrance_talk" />
+
+    <RelativeLayout
+        android:id="@+id/entrance_msg_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/entrance_order"
+        android:layout_marginLeft="75dp"
+        android:layout_toRightOf="@id/entrance_talk">
+
+        <ImageView
+            android:id="@+id/entrance_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/entrance_msg" />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="-5dp"
+            android:background="@mipmap/entrance_red"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/entrance_set"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/entrance_set"
+        android:layout_alignTop="@id/entrance_order"
+        android:layout_marginLeft="75dp"
+        android:layout_toRightOf="@id/entrance_msg_rl"
+        />
+
+    <ImageView
+        android:id="@+id/entrance_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/entrance_sound"/>
+    <ImageView
+        android:id="@+id/entrance_blooteeth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/entrance_sound"
+        android:layout_alignTop="@id/entrance_sound"
+        android:layout_marginRight="60dp"
+        android:src="@mipmap/entrance_bluetooth"/>
+
+    <ImageView
+        android:id="@+id/entrance_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/entrance_sound"
+        android:layout_marginRight="60dp"
+        android:layout_toLeftOf="@id/entrance_blooteeth"
+        android:src="@mipmap/entrance_wifi" />
+</RelativeLayout>

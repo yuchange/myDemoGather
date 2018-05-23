@@ -1,0 +1,116 @@
+10
+
+dir
+793
+https://120.27.213.127:8443/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall
+https://120.27.213.127:8443/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0
+
+
+
+2017-09-22T03:08:14.075645Z
+783
+zyf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3bda7e5a-96a4-744b-a4d9-b07fa691c797
+
+BingStarApp.java
+file
+
+
+
+
+2017-09-25T05:53:46.970000Z
+ef66f87518ce984df41271aed42cfbd6
+2017-09-15T12:11:07.085311Z
+718
+zyf
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2102
+
+Utils
+dir
+
+ads
+dir
+
+base
+dir
+
+cart
+dir
+
+collect
+dir
+
+cycle
+dir
+
+discount
+dir
+
+errinfo
+dir
+
+goods
+dir
+
+home
+dir
+
+launcher
+dir
+
+main
+dir
+
+net
+dir
+
+order
+dir
+
+sdk
+dir
+
+statistics
+dir
+
+user
+dir
+
+video
+dir
+

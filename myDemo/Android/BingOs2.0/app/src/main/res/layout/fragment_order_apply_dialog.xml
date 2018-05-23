@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@mipmap/order_apply_dialog_bg"
+              >
+
+    <ImageView
+        android:id="@+id/iv_order_apply_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:src="@mipmap/address_addfragment_close"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="103dp"
+            android:layout_marginTop="102dp"
+            android:text="请选择退款理由"
+            android:textColor="@color/c_919191"
+            android:textSize="17sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_package_breakage"
+                style="@style/order_apply_btn"
+                android:text="包装破损"
+                android:textColor="@color/c_919191"
+                />
+
+            <Button
+                android:id="@+id/btn_expired_goods"
+                style="@style/order_apply_btn"
+                android:layout_marginLeft="100dp"
+                android:text="商品过期"
+                android:textColor="@color/c_919191"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="47dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_other_reason"
+                style="@style/order_apply_btn"
+                android:text="其他原因"
+                android:textColor="@color/c_919191"
+                />
+
+            <Button
+                android:id="@+id/btn_leakage"
+                style="@style/order_apply_btn"
+                android:layout_marginLeft="100dp"
+                android:text="少发漏发"
+                android:textColor="@color/c_919191"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_order_apply_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="93dp"
+            android:background="@mipmap/order_apply_commit"
+            android:text="提交申请"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</RelativeLayout>

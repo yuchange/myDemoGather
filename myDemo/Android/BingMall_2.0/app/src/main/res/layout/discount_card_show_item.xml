@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="400dp"
+              android:layout_height="235dp"
+              android:layout_marginBottom="20dp"
+              android:layout_marginRight="2dp"
+              android:background="@drawable/discount_coupon_custom"
+              android:orientation="vertical"
+              android:paddingLeft="20dp"
+              android:paddingTop="13dp">
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/discount_card_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用时间:000000000"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/discount_card_date_size"/>
+
+            <TextView
+                android:id="@+id/discount_card_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:maxWidth="280dp"
+                android:text="满28圆使用"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/goodslist_productname_textsize"/>
+
+            <TextView
+                android:id="@+id/discount_card_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:maxWidth="280dp"
+                android:text="@string/discount_vouchers"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/discount_item_tv_couponinfo"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/discount_card_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/discount_coupon_num"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:text="x80 "
+            android:textColor="@color/addr_manage_adapter_name"
+            android:textSize="@dimen/discount_item_textsizemoney"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/discount_card_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/discount_card_cshape"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="店铺通用"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/discount_view_textsize"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/discount_money_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="17dp"
+            android:text="@string/discount_money"
+            android:textSize="@dimen/discount_item_textsizemoney"/>
+
+
+        <TextView
+            android:id="@+id/carditem_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginRight="10dp"
+            android:gravity="top"
+            android:text="300"
+            android:textSize="@dimen/discount_item_pricetextsize"/>
+    </LinearLayout>
+</LinearLayout>

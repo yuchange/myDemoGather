@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bingstar.bingmall.video.lib.SynLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cycle_synlinearlayout"
+    >
+
+    <LinearLayout
+        android:layout_width="@dimen/cycle_detail_ll_w"
+        android:layout_height="@dimen/cycle_detail_ll_h"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cycle_detail_lll_h"
+            android:orientation="vertical"
+            android:background="@color/selected_day_background">
+
+    <ImageView
+        android:layout_width="@dimen/cycle_detail_image_w"
+        android:layout_height="@dimen/cycle_detail_image_h"
+        android:layout_marginTop="@dimen/cycle_detail_image_mt"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/cycle_logo"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/order_infofragment_nametvmarginleft"
+        android:layout_width="@dimen/cycle_detail_llll_w"
+        android:layout_height="@dimen/cycle_detail_llll_h"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="@dimen/order_listItem_marginBottom"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/cycle_edit_day"
+            android:layout_width="@dimen/order_infofragment_aftersaletvwidth"
+            android:layout_height="@dimen/order_infofragment_aftersaletvwidth"
+            android:background="@drawable/cycle_item"
+            android:textSize="@dimen/cycle_detail_dialog_et_size"
+            android:maxLength="2"
+            android:inputType="number"
+            android:textColor="@color/goodsDetailPrice"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="@dimen/cart_fragment_addrrela_marginleft"
+            android:layout_height="@dimen/cart_fragment_addrrela_marginleft"
+            android:layout_marginLeft="@dimen/cart_titleitem_view_marginleft"
+            android:src="@drawable/cycle_day"
+            android:scaleType="fitXY"
+            />
+
+        <EditText
+            android:id="@+id/cycle_eidt_number"
+            android:layout_width="@dimen/order_infofragment_aftersaletvwidth"
+            android:layout_height="@dimen/order_infofragment_aftersaletvwidth"
+            android:layout_marginLeft="@dimen/order_infofragment_numtvheight"
+            android:background="@drawable/cycle_item"
+            android:textSize="@dimen/cycle_detail_dialog_et_size"
+            android:maxLength="2"
+            android:inputType="number"
+            android:textColor="@color/goodsDetailPrice"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="@dimen/cart_fragment_addrrela_marginleft"
+            android:layout_height="@dimen/cart_fragment_addrrela_marginleft"
+            android:layout_marginLeft="@dimen/cart_titleitem_view_marginleft"
+            android:src="@drawable/cycle_number"
+            android:scaleType="fitXY"
+            />
+
+    </LinearLayout>
+ </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cycle_detail_lllll_h"
+            android:background="@color/white"
+            >
+            <TextView
+                android:id="@+id/text_mothy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ads_space_bottom_v"
+                android:layout_marginLeft="@dimen/cart_fragment_titlerv_h"
+                android:text="@string/cycle_detail_money"
+                android:textColor="@color/goodsDetailLimitPrice"
+                android:textSize="@dimen/cycle_detail_dialog_text_size"/>
+            <TextView
+                android:id="@+id/cycle_dialog_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ads_space_bottom_v"
+                android:textColor="@color/goodsDetailLimitPrice"
+                android:textSize="@dimen/cycle_detail_dialog_text_size"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/cycle_dialog_ordertv"
+                    android:layout_width="@dimen/cart_fragment_discountiv_w"
+                    android:layout_height="@dimen/cycle_detail_lllll_image_h"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="26dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/cofirm_button"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</com.bingstar.bingmall.video.lib.SynLinearLayout >

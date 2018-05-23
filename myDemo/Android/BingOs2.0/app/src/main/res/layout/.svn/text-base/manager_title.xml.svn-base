@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/manager_title_bg">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/title_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:tabIndicatorColor="#FF8434"
+        app:tabIndicatorHeight="4px"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="#FF8434"
+        app:tabTextAppearance="@style/TabLayoutTextAppearances"
+        app:tabTextColor="#919191" />
+
+
+    <TextView
+        android:id="@+id/manager_log_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF8434"
+        android:text="退出登录"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="50dp"
+        android:textSize="17sp"/>
+</RelativeLayout>

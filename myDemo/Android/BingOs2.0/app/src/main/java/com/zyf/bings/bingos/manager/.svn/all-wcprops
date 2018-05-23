@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1114/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/manager
+END
+PersonalQRcodeFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/580/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/manager/PersonalQRcodeFragment.java
+END
+AccountFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1114/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/manager/AccountFragment.java
+END
+ManagerFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1028/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/manager/ManagerFragment.java
+END
+BasicInfoFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/594/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/manager/BasicInfoFragment.java
+END
+SelectionOnRvItemClick.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/580/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/manager/SelectionOnRvItemClick.java
+END
+LogOutClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1051/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/manager/LogOutClient.java
+END
+SmallHeadRvAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/580/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/manager/SmallHeadRvAdapter.java
+END
+ManagerAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/580/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/manager/ManagerAdapter.java
+END

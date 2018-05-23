@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/discount_timerv_item_textw"
+    android:layout_height="@dimen/order_infofragment_pricetvheight"
+    android:background="@drawable/discount_time_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/discount_title_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/cart_titleitem_tv_textsize"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/discount_title_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.updayup.yuchance.textisdemo.MainActivity"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:background="@drawable/bg_img"
+        android:scaleType="fitXY"
+        />
+
+
+
+
+
+    <TextView
+        android:id="@+id/maintv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        />
+    <Button
+        android:id="@+id/main_zk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="展开"
+        />
+    <Button
+        android:id="@+id/main_sx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="缩小"
+        />
+    <Button
+        android:id="@+id/main_jz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="多字"
+        />
+    <Button
+        android:id="@+id/main_sz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="少字"
+        />
+    <com.updayup.yuchance.textisdemo.cardview.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+       android:layout_margin="10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我还是结婚登记卡联合发路交口收到回复来看"
+            />
+
+
+    </com.updayup.yuchance.textisdemo.cardview.CardView>
+
+
+
+
+
+</LinearLayout>

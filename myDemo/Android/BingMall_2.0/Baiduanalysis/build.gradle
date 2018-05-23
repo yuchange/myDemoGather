@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('Baidu_Mtj_3.7.6.1.jar'))

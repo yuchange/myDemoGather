@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center"
+              android:background="@android:color/black"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/pay_haier_space_padding"
+              android:paddingRight="@dimen/pay_haier_space_padding">
+
+    <com.bingstar.bingmall.video.lib.SynLinearLayout
+        android:id="@+id/pay_haierpay_syn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pay_haier_top_height"
+        android:layout_marginTop="@dimen/pay_haier_space_top"
+        android:background="@drawable/pay_haier_top_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/pay_haier_title_margin"
+                android:layout_marginTop="@dimen/pay_haier_title_margin"
+                android:text="@string/pay_by_qr"
+                android:textSize="@dimen/pay_haier_title_time"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="@dimen/pay_haier_qr_bg_w"
+                    android:layout_height="@dimen/pay_haier_qr_bg_h"
+                    android:layout_marginRight="@dimen/pay_haier_qr_bg_space"
+                    android:background="@drawable/pay_haier_qr_bg"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/pay_haier_ali"
+                        android:layout_width="@dimen/pay_haier_qr"
+                        android:layout_height="@dimen/pay_haier_qr"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/pay_haier_qr_space"
+                        android:drawableLeft="@drawable/pay_alipay_logo"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/pay_by_ali"
+                        android:textSize="@dimen/pay_haier_type_size"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/pay_haier_qr_bg_w"
+                    android:layout_height="@dimen/pay_haier_qr_bg_h"
+                    android:layout_marginLeft="@dimen/pay_haier_qr_bg_space"
+                    android:background="@drawable/pay_haier_qr_bg"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:id="@+id/pay_haier_wx"
+                        android:layout_width="@dimen/pay_haier_qr"
+                        android:layout_height="@dimen/pay_haier_qr"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/pay_haier_qr_space"
+                        android:drawableLeft="@drawable/pay_wx_logo"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/pay_by_wx"
+                        android:textSize="@dimen/pay_haier_type_size"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pay_haier_time"
+                android:layout_width="@dimen/pay_haier_time_w"
+                android:layout_height="@dimen/pay_haier_time_h"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/pay_haier_time_bg"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/pay_haier_title_time"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:paddingLeft="5dp"
+                android:text="@string/pay_haier_please_pay"
+                android:textColor="@color/pay_haier_hint"
+                android:textSize="@dimen/pay_haier_hint_size"/>
+        </LinearLayout>
+    </com.bingstar.bingmall.video.lib.SynLinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pay_haier_bottom_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/pay_haier_money"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/pay_haier_bottom_size"/>
+
+        <TextView
+            android:id="@+id/pay_haier_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:textColor="@android:color/white"
+            android:textSize="33dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pay_haier_pay_num"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/pay_haier_bottom_size"/>
+
+        <TextView
+            android:id="@+id/pay_haier_pay_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/pay_haier_bottom_size"/>
+
+        <Button
+            android:id="@+id/pay_haier_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/pay_wait_btn"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

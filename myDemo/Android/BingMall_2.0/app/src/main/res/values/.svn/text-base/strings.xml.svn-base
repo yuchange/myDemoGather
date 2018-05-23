@@ -1,0 +1,194 @@
+<resources>
+    <string name="app_name">BingMall</string>
+
+    <string name="order_listitem_nametv">标题</string>
+    <string name="order_listitem_pricetv">价格</string>
+    <string name="order_listitem_numtv">数量</string>
+    <string name="order_listitem_buytv">再次购买</string>
+
+    <string name="goods_name">商品名称</string>
+    <string name="goods_price">商品单价</string>
+    <string name="goods_total_price">商品总价</string>
+    <string name="goods_num">商品数量</string>
+    <string name="goods_weight">商品重量</string>
+    <string name="goods_freight">运费</string>
+
+    <string name="cycle_jiaru">加入周期购</string>
+    <string name="cycle_count">购买次数</string>
+    <string name="cycle_money">￥</string>
+    <string name="cycle_mothymothy">/</string>
+    <string name="cycle_unit">g</string>
+    <string name="cycle_detail_money">付款金额:￥</string>
+    <string name="order_default">0.00</string>
+
+    <string name="cart_add_success">添加购物车成功</string>
+    <string name="cart_order_confirm_text">订单总金额</string>
+    <string name="cart_order_confirm_text2">确认下单</string>
+    <string name="cart_add_fail">添加购物车失败</string>
+    <string name="delete_tv">您确定要删除吗？</string>
+
+    <string name="add_order_addr">新增收货地址</string>
+    <string name="add_order_addr_name">联系人：</string>
+    <string name="add_order_addr_id">身份证：</string>
+    <string name="add_order_addr_phone">手机号码：</string>
+    <string name="add_order_addr_area">所在区域：</string>
+    <string name="add_order_addr_detail">详细地址：</string>
+    <string name="add_order_manager_title">地址管理</string>
+    <string name="add_order_manager_delete">确定删除该地址？</string>
+
+    <string name="order_title">我的订单</string>
+    <string name="order_cancel">取消</string>
+    <string name="order_delete">删除</string>
+    <string name="order_info_title">订单详情</string>
+    <string name="order_info_money">商品总额： </string>
+    <string name="order_info_postage"></string>
+    <string name="order_info_preferential"></string>
+    <string name="order_info_limitmoney">订单总价： </string>
+    <string name="order_info_payway">付款方式：</string>
+    <string name="order_info_balance">付款方式：余额支付</string>
+    <string name="order_info_pay_ali">付款方式：支付宝支付</string>
+    <string name="order_info_pay_wx">付款方式：微信支付</string>
+    <string name="order_info_unpay">待付款</string>
+    <string name="order_ionfo_un_delivery">待发货</string>
+    <string name="order_info_textpay">已支付</string>
+    <string name="order_info_delivery">已发货</string>
+    <string name="order_info_goods">已收货</string>
+    <string name="order_info_applay_back_money">申请退款中</string>
+    <string name="order_info_back_money">退款审核中</string>
+    <string name="order_info_back_money_success">退款成功</string>
+    <string name="order_info_applay_back_goods">申请退货中</string>
+    <string name="order_info_back_goods">退货审核中</string>
+    <string name="order_info_back_goods_success">退货成功</string>
+    <string name="order_detail_heard_text">已付款</string>
+    <string name="order_detail_number">订单编号：</string>
+    <string name="order_detail_weight">规格：</string>  //订单页面改为规格 1.2临时需求
+    <string name="order_detail_carriage">运费：</string>
+    <string name="order_detail_list_number">数量：</string>
+    <string name="order_detail_list_limitmoney">订单金额：</string>
+    <string name="order_info_title_delete">"确定要删除该订单吗?"</string>
+
+    <string name="cycle_UnOpen">暂未开通</string>
+
+    <string name="discount_count">优惠券</string>
+
+    <string name="discount_money">¥</string>
+    <string name="discount_vouchers">冰果商城优惠券</string>
+    <string name="discount_conditions">满50元使用</string>
+    <string name="discount_date">2017-03-02-2017-05-02</string>
+    <string name="discount_use">全部可用(</string>
+    <string name="discount_expired">即将过期(</string>
+    <string name="discount_off">已失效(</string>
+    <string name="discount_use2">)</string>
+    <string name="discount_coupon_warn">您有</string>
+    <string name="discount_coupon_validity">使用时间: </string>
+    <string name="discount_coupon_warn2">张优惠券即将过期,不要浪费呦~~</string>
+    <string name="discount_acquire_coupon0">领取成功！</string>
+    <string name="discount_acquire_coupon1">您的领取次数已用完！</string>
+    <string name="discount_acquire_coupon2">该优惠券已抢光！</string>
+    <string name="discount_acquire_coupon3">优惠券领取失败....</string>
+
+    <string name="discount_show_conditions">•</string>
+    <string name="discount_show_date">•</string>
+
+    <string name="err_fragment_text">加载出错了!</string>
+    <string name="err_fragment_button">重新加载</string>
+
+    <string name="goods_fragment_detail_detail">该商品非常新鲜!</string>
+    <string name="goods_fragment_detail_collection">收藏</string>
+    <string name="goods_fragment_detail_thumb">点赞</string>
+    <string name="goods_detail_num_warnL">宝贝不能再减少了哦!</string>
+    <string name="goods_detail_num_warnE">请您输入正确的宝贝数量！</string>
+    <string name="goods_detail_num_warnH1">库存不足,剩余库存</string>
+    <string name="goods_detail_num_warnH2">),请重新输入.</string>
+
+    <string name="goods_search_fragment_record">历史记录</string>
+    <string name="goods_search_fragment_clean_record">清除历史</string>
+
+    <string name="goodslist_products_item_addcart">加入购物车</string>
+    <string name="goodslist_products_item_oneKey">一键下单</string>
+    <string name="map_default_position">中国</string>
+
+
+    <string name="goods_good_title">集赞</string>
+    <string name="order_detail_adapter_title">冰果优品</string>
+
+    <string name="order_detail_adapter_g">g</string>
+
+    <string name="order_apply">售后页面</string>
+
+    <string name="order_detail_error">您的订单已申请售后，如有其它问题请联系人工客服"400-8800-504"</string>
+    <string name="no_memeber_id">您暂未登录，请回到主界面登录后再操作！</string>
+    <string name="no_memeber_coupon">您尚未登录，请返回主界面登录！</string>
+
+    <string name="no_answer">未知错误 </string>
+    <string name="order_repeat">订单重复 </string>
+    <string name="order_verify_fail">验证订单失败 </string>
+    <string name="user_has_activated">激活用户重复 </string>
+    <string name="user_activate_fail">用户激活失败 </string>
+    <string name="coupon_has_get">用户不能重复领取优惠券 </string>
+    <string name="get_coupon_fail">领取优惠券失败 </string>
+    <string name="constract_fail">签约用户失败 </string>
+    <string name="system_error">系统错误 </string>
+    <string name="json_data_error">Json数据错误</string>
+    <string name="launcher_my_order">我的订单</string>
+    <string name="launcher_all_order">全部订单</string>
+    <string name="launcher_wait_pay">待付款</string>
+    <string name="launcher_wait_transport">待发货</string>
+    <string name="launcher_wait_check">待收货</string>navigation
+
+    <string name="user_nomemberid">您暂未登录，请回到主界面登录后再操作！</string>
+    <string name="search_nocategoryid">请选择分类后再进行搜索</string>
+    <string name="discount_title_ads"> 享受，从特惠开始，每日特惠，让您在家安心购!</string>
+    <string name="discount_not_start">抢购即将开始！</string>
+    <string name="order_info_pay_other">付款方式:其他</string>
+    <string name="cycle_dialog_data_null">数据不能为空</string>
+    <string name="sign_multiplied">*</string>
+    <string name="launcher_login_message">您尚未登录，请登录后使用此功能！</string>
+    <string name="login_error">登录出错</string>
+    <string name="navigation_error">获取导航栏出错</string>
+    <string name="pay_by_qr">扫码付款</string>
+    <string name="pay_by_ali">支付宝付款</string>
+    <string name="pay_by_wx">微信付款</string>
+    <string name="pay_haier_money">支付金额:</string>
+    <string name="pay_haier_pay_num"> 订单号: </string>
+    <string name="back">返回</string>
+    <string name="pay_haier_timeout">支付已超时 已取消订单</string>
+    <string name="pay_haier_fail">支付已失败 请重新支付</string>
+    <string name="pay_haier_success">订单支付已成功</string>
+    <string name="pay_haier_please_pay">请及时支付 超时将取消订单</string>
+
+    <string name="goods_detail_money">¥</string>
+    <string name="goods_fragment_key">关键字</string>
+
+    <string name="adsfragment_key">关键字</string>
+    <string name="ali_pay_success">支付成功</string>
+    <string name="ali_pay_fail">支付失败</string>
+
+    <string name="no_search_good">暂无搜索商品！</string>
+    <string name="no_goods">暂无商品</string>
+    <string name="no_discount_card">暂无优惠券</string>
+
+    <string name="cycle_dialog_create_error">创建订单失败</string>
+
+    //　　
+    <string name="cart_payWarn">订单中含有跨境商品,购买跨境商品</string>
+    <string name="cart_payWarnt">需填写身份证号,请补全！</string>
+    <string name="addr_id_hint">身份证号码非必填.</string>
+    <string name="cart_oneKey_warn">请先设置默认地址！</string>
+    <string name="service_hotline">客服热线: 400-880-0504</string>
+    <string name="service_hotline_paylater">如有其他问题请联系客服: 400-880-0504</string>
+
+
+    <string name="tips_not_wifi">您当前正在使用移动网络，继续播放将消耗流量</string>
+    <string name="tips_not_wifi_confirm">继续播放</string>
+    <string name="tips_not_wifi_cancel">停止播放</string>
+    <string name="no_url">播放地址无效</string>
+
+    <string name="syn_linear_error">加载出错啦 点击重新加载</string>
+    <string name="syn_linear_empty">暂无数据</string>
+    <string name="orderlist_no_order">暂无订单!</string>
+    <string name="cartlist_no_goods">购物车还是空的!</string>
+    <string name="user_no_login">您还没登录哦～请先登录～</string>
+    <string name="goods_no_less">宝贝不能再少了哦!</string>
+    
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="@mipmap/order_confirm_fragment_bg"
+    >
+
+    <ImageView
+        android:id="@+id/iv_logistics_close"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="31dp"
+        android:layout_marginTop="26dp"
+        android:src="@mipmap/address_addfragment_close"/>
+
+    <com.zyf.bings.bingos.ui.statelayout.ProgressFrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/progress_view"
+        app:emptyImageMarginTop="0dp"
+        app:errorImageMarginTop="0dp"
+        app:loadingProgressMarginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    >
+
+        <LinearLayout
+            android:id="@+id/ll_logistics_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_logiscis_company_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="31dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_logistics_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/c_919191"
+                    android:textSize="17sp"/>
+
+                <TextView
+                    android:id="@+id/tv_logistics_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/c_919191"
+                    android:textSize="17sp"/>
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/view_line_loistics"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll_logiscis_company_info"
+                android:layout_marginLeft="31dp"
+                android:layout_marginRight="31dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/c_919191"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_logistics"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="50dp"></android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_error_logistics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="31dp"
+            android:text="暂无物流信息"
+            android:textColor="@color/c_919191"
+            android:textSize="@dimen/common_tv_size"
+            android:visibility="gone"
+            />
+    </com.zyf.bings.bingos.ui.statelayout.ProgressFrameLayout>
+</RelativeLayout>

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1083/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/bean
+END
+CreateOrderInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/866/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/bean/CreateOrderInfo.java
+END
+Receiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/866/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/bean/Receiver.java
+END
+ConfirmOrderBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/924/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/bean/ConfirmOrderBean.java
+END
+QrcodeBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/967/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/bean/QrcodeBean.java
+END
+OrderListBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1043/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/bean/OrderListBean.java
+END
+LogisticsComanyInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/956/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/bean/LogisticsComanyInfo.java
+END
+OrderInfoBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/1083/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/bean/OrderInfoBean.java
+END
+TradeItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/924/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/bean/TradeItem.java
+END
+Trade.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/924/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/bean/Trade.java
+END
+LogisticsInfoBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/862/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/bean/LogisticsInfoBean.java
+END
+OrderCountBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/947/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/bean/OrderCountBean.java
+END
+QrCodeUrl.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/956/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/bean/QrCodeUrl.java
+END
+LogisticsListBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/973/trunk/bingMallAndroid/BingOs2.0/app/src/main/java/com/zyf/bings/bingos/order/bean/LogisticsListBean.java
+END

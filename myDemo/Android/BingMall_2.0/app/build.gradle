@@ -1,0 +1,215 @@
+//apply plugin: 'com.android.application'
+//
+//apply plugin: 'com.android.library'
+//
+///**
+// * 打包海尔版本时配置build variants 为release
+// * bingOS版本build variants 为debug
+// */
+//
+//android {
+//    compileSdkVersion 25
+//    buildToolsVersion "24.0.3"
+//
+//    defaultConfig {
+//        minSdkVersion 14
+//        targetSdkVersion 25
+//        versionCode 50
+//        versionName "1.4.8"
+//    }
+//
+//
+//    buildTypes {
+//
+//        libraryVariants.all { variant ->
+//            variant.outputs.each { output ->
+//                def outputFile = output.outputFile
+//                if (outputFile != null && outputFile.name.endsWith('.aar')) {
+//                    def fileName = "BSBM00_v${defaultConfig.versionName}.aar"
+//                    output.outputFile = new File(outputFile.parent, fileName)
+//                }
+//            }
+//        }
+//        debug {
+//
+//            /**bingOS版本**/
+//
+//            buildConfigField("String", "BUILD_FLAG", "\"bingOS\"")
+//            manifestPlaceholders = [
+//                    "BAIDUMAP_KEY": "p7qyE8oIHN9wlr9yptlOheqeeydBXQzE",    //临时 后期替换   HpD5ecRUHXaEnaozIsWj83fyZlGaRZ2D
+//                    "BAIDUSTAT_KEY"    : "28bc3a3f85",     //百度统计key 测试
+//                    "BAIDUSTAT_CHANNEL": "haier"     //百度统计渠道
+//            ]
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//
+//
+//        release {
+//
+//            /**海尔版本**/
+//
+//            buildConfigField("String", "BUILD_FLAG", "\"haier\"")
+//            manifestPlaceholders = [
+//                    "BAIDUMAP_KEY": "stABiqyE5t6xIt1bnGGq3sG3xBAW9T5k", //7kgiNOFA4w0uFpY5lzv9wXsyqNmgbkew  stABiqyE5t6xIt1bnGGq3sG3xBAW9T5k
+//                    "BAIDUSTAT_KEY"    : "5d879505b3",     //百度统计key
+//                    "BAIDUSTAT_CHANNEL": "haier"     //百度统计渠道
+//            ]
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//    }
+//}
+//
+//apply from: 'fat-aar.gradle'
+//
+//repositories {
+//    flatDir {
+//        dirs 'libs'
+//    }
+//}
+//
+//
+//dependencies {
+//    embedded project(':libyunzhi')
+//    testCompile 'junit:junit:4.12'
+//    compile 'com.android.support:appcompat-v7:25.1.1'
+//    compile 'com.squareup.okhttp3:okhttp:3.5.0'
+//    compile 'io.reactivex:rxandroid:1.2.1'
+//    compile 'com.android.support:recyclerview-v7:25.1.1'
+//    compile 'com.alibaba:fastjson:1.2.24'
+//    compile 'com.github.bumptech.glide:glide:3.7.0'
+//    compile 'org.greenrobot:eventbus:3.0.0'
+//    //    compile project(':libyunzhi')
+//    compile project(':BaiduLBS_Android')
+//    compile project(':alipaySdk-20161222')
+//    //embedded project(':jcvideoplayer-lib')
+//    compile project(':pgyer_sdk_2.5.6')
+//    compile project(':Baiduanalysis')
+//    compile 'com.google.zxing:core:3.3.0'
+//    // compile files('libs/BaiduLBS_Android.jar')
+//    //compile files('libs/Baidu_Mtj_3.7.6.1.jar')
+//}
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "com.bingstar.bingmall"
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 42
+        versionName "BING_101_0119_0006"  //每发一版 0119加一  其它不变
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+        }
+    }
+    signingConfigs {
+        release {
+            try {
+                storeFile file("../apkinfo/bingmall.jks")
+                storePassword KEYSTORE_PASSWORD
+                keyAlias KEY_ALIAS
+                keyPassword KEY_PASSWORD
+            } catch (ex) {
+                throw new NullPointerException('You should define KEYSTORE_PASSWORD and KEY_PASSWORD in gradle.properties')
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+
+            /**bingOS版本**/
+
+            buildConfigField("String", "BUILD_FLAG", "\"TbingOS\"")
+            manifestPlaceholders = [
+                    "BAIDUMAP_KEY"     : "hd6QVTEOWY9bhvQg7cjYKXXN7gte88lM",    //临时 后期替换   HpD5ecRUHXaEnaozIsWj83fyZlGaRZ2D
+                    "BAIDUSTAT_KEY"    : "28bc3a3f85",     //百度统计key 测试
+                    "BAIDUSTAT_CHANNEL": "haier"     //百度统计渠道
+            ]
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+
+        release {
+
+            /**海尔版本**/
+
+            buildConfigField("String", "BUILD_FLAG", "\"haier\"")
+            manifestPlaceholders = [
+                    "BAIDUMAP_KEY"     : "1cVjyLHGPVMj3PBkpER1YYA0SRjo4exH", //7kgiNOFA4w0uFpY5lzv9wXsyqNmgbkew  stABiqyE5t6xIt1bnGGq3sG3xBAW9T5k  1cVjyLHGPVMj3PBkpER1YYA0SRjo4exH
+                    "BAIDUSTAT_KEY"    : "5d879505b3",     //百度统计key
+                    "BAIDUSTAT_CHANNEL": "haier"     //百度统计渠道
+            ]
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+
+        //多渠道打包
+        applicationVariants.all { variant ->
+
+            //动态替换apk文件名字
+            variant.outputs.each { output ->
+                def outputFile = output.outputFile
+                if (outputFile != null && outputFile.name.endsWith(".apk")) {
+                    def fileName
+                    if (variant.buildType.name == "release") {
+                        fileName = "${defaultConfig.versionName}_release.apk"
+                    } else if (variant.buildType.name == "develop") {
+                        fileName = "${defaultConfig.versionName}_develop.apk"
+                    } else {
+                        fileName = "${defaultConfig.versionName}_debug.apk"
+                    }
+                    println "-------替换apk文件名字----------"
+                    output.outputFile = new File(outputFile.parent, fileName)
+                }
+
+                // 删除unaligned apk
+                if (output.zipAlign != null) {
+                    output.zipAlign.doLast {
+                        output.zipAlign.inputFile.delete()
+                    }
+                }
+            }
+        }
+    }
+}
+
+apply from: 'fat-aar.gradle'
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.1.1'
+    compile 'com.squareup.okhttp3:okhttp:3.5.0'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile(name: 'user-sdk', ext: 'aar')
+    compile(name: 'app-info', ext: 'aar')
+    compile(name: 'app-info-base', ext: 'aar')
+    compile 'com.android.support:recyclerview-v7:25.1.1'
+    compile 'com.alibaba:fastjson:1.2.24'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile project(':libyunzhi')
+    compile project(':alipaySdk-20161222')
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/pgyer_sdk_2.5.6.jar')
+    compile 'com.google.zxing:core:3.3.0'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile files('libs/Baidu_Mtj_3.7.6.1.jar')
+}
+

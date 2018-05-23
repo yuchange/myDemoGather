@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="#f4f4f4"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/address_manager_item_bg"
+        >
+
+        <ImageView
+            android:id="@+id/iv_address_select"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="41dp"
+            android:src="@mipmap/shopcart_goodsitem_unselect"/>
+
+        <TextView
+            android:id="@+id/tv_address_username"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_address_select"
+            android:gravity="center"
+            android:paddingLeft="-30dp"
+            android:text="保尔柯察金"
+            android:textSize="@dimen/common_tv_size"/>
+
+        <TextView
+            android:id="@+id/tv_address_usertel"
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_address_username"
+            android:gravity="center"
+            android:text="1234567890"
+            android:textSize="@dimen/common_tv_size"/>
+
+        <TextView
+            android:id="@+id/tv_address_useraddress"
+            android:layout_width="450dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@+id/tv_address_usertel"
+            android:gravity="center"
+            android:paddingLeft="-80dp"
+            android:text="浙江省 杭州市 余杭区 文一西路999号海创园一栋505收"
+            android:textSize="@dimen/common_tv_size"/>
+
+        <Button
+            android:id="@+id/btn_address_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="41dp"
+            android:background="@mipmap/address_btn_bgo"
+            android:text="默认地址"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/common_tv_size"/>
+
+    </RelativeLayout>
+</LinearLayout>

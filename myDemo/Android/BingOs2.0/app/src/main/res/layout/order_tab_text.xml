@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:clipChildren="false"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clipChildren="false">
+
+        <TextView
+            android:id="@+id/order_tab_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="标题题"
+            android:textColor="@drawable/order_tab"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/order_tab_num"
+            style="@style/order_red_text_num"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

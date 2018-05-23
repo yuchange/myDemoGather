@@ -1,0 +1,170 @@
+package com.bingstar.bingmall.order;
+
+
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import com.bingstar.bingmall.R;
+import com.bingstar.bingmall.base.WarpLinearLayoutManager;
+import com.bingstar.bingmall.order.bean.OrderList;
+import com.bingstar.bingmall.order.view.OrderListItemAdapter;
+import com.yunzhi.lib.utils.LogUtils;
+
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Formatter;
+
+
+/**
+ * Created by qianhechen on 17/2/8.
+ */
+//OrderInfo
+
+public class OrderListAdapter extends RecyclerView.Adapter<OrderListAdapter.OrderListHolder> {
+
+    private Context context;
+
+    public OrderListAdapter(ArrayList<OrderList.Zorder> list) {
+        this.list = list;
+    }
+
+    private ArrayList<OrderList.Zorder> list;
+    private WarpLinearLayoutManager linearLayoutManager;
+    private OrderItemOnItemOnClickListener orderItemOnItemOnClickListener;
+
+    @Override
+    public OrderListHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        context = parent.getContext();
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.order_orderlist_item, parent,
+                false);
+        final OrderListHolder orderListHolder = new OrderListHolder(view);
+
+        linearLayoutManager = new WarpLinearLayoutManager(parent.getContext(), GridLayoutManager.HORIZONTAL, false);
+
+        if (null != orderItemOnItemOnClickListener) {
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    orderItemOnItemOnClickListener.setOnItemClick(orderListHolder.itemView, orderListHolder.getLayoutPosition());
+                }
+            });
+        }
+
+        return orderListHolder;
+    }
+
+    @Override
+    public void onBindViewHolder(OrderListHolder holder, int position) {
+        if ("0".equals(list.get(position).getZstate())) {//待支付
+//            总订单标记0:待支付1:待发货 2:已发货5:已收货99:失败
+            holder.order_state.setBackgroundResource(R.drawable.order_unpayment);
+            holder.orderImage_state.setImageResource(R.drawable.order_item_unpay);
+            holder.order_list_item_flug.setVisibility(View.GONE);
+        } else if ("2".equals(list.get(position).getZstate())) {//已发货
+            holder.order_state.setBackgroundResource(R.drawable.order_delivery);
+            holder.orderImage_state.setImageResource(R.drawable.order_item_delivery);
+            holder.order_list_item_flug.setVisibility(View.VISIBLE);
+            if ("23".equals(list.get(position).getAfterSaleState()) || "22".equals(list.get(position).getAfterSaleState())) {//退货中
+                holder.order_list_item_flug.setImageResource(R.drawable.order_back_goods);
+            } else if ("24".equals(list.get(position).getAfterSaleState())) {//退货成功
+                holder.order_list_item_flug.setImageResource(R.drawable.order_back_goods_success);
+            } else if ("12".equals(list.get(position).getAfterSaleState()) || "13".equals(list.get(position).getAfterSaleState())) {//退款中
+                holder.order_list_item_flug.setImageResource(R.drawable.order_back_money);
+            } else if ("14".equals(list.get(position).getAfterSaleState())) {//退款成功
+                holder.order_list_item_flug.setImageResource(R.drawable.order_back_money_success);
+            } else {
+                holder.order_list_item_flug.setVisibility(View.GONE);
+            }
+        } else {//已支付
+            holder.order_state.setBackgroundResource(R.drawable.order_payment);
+            holder.orderImage_state.setImageResource(R.drawable.order_item_pay);
+            holder.order_list_item_flug.setVisibility(View.VISIBLE);
+//            售后状态(12:申请退款中; 13:退款审核中; 14:退款成功; 22:申请退货中; 23:退货审核中; 24:退货成功)
+            if ("14".equals(list.get(position).getAfterSaleState())) {//退款成功
+                holder.order_list_item_flug.setImageResource(R.drawable.order_back_money_success_red);
+            } else if ("12".equals(list.get(position).getAfterSaleState()) || "13".equals(list.get(position).getAfterSaleState())) {//退款中
+                holder.order_list_item_flug.setImageResource(R.drawable.order_back_money_red);
+            } else {
+                holder.order_list_item_flug.setVisibility(View.GONE);
+            }
+        }
+        holder.orderPriText.setText(list.get(position).getZorder_total_money());
+        String payTime = list.get(position).getAddTime();
+        LogUtils.Debug_E(getClass(), payTime);
+        if (payTime!=null) {
+            @SuppressLint("SimpleDateFormat")
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            try {
+                Date date = dateFormat.parse(payTime);
+                payTime =  (date.getMonth()+1)+"月"+date.getDate()+"日"+" "+new Formatter().format("%02d", date.getHours())+":"+new Formatter().format("%02d",date.getMinutes());
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+            holder.order_list_time.setText(payTime);
+        }
+//        holder.orderNameText.setText(list.get(position).getName());
+//        holder.products.clear();
+//        holder.products.addAll(list.get(position).getProductList());
+//        for (OrderList.Zorder.ZorderProduct zorderProduct:holder.products){
+//            LogUtils.Debug_E(OrderListAdapter.class,zorderProduct.getBsjProductName()+"//"+zorderProduct.getImage_url());
+//        }
+        holder.orderRecycleView.setAdapter(new OrderListItemAdapter(list.get(position).getProductList()));
+    }
+
+    @Override
+    public int getItemCount() {
+        return list.size();
+    }
+
+    public class OrderListHolder extends RecyclerView.ViewHolder {
+
+        private TextView  orderPriText;
+        private RecyclerView orderRecycleView;
+        private ImageView orderImageFlug;
+        private LinearLayout order_state;
+        private ImageView orderImage_state;//支付图片标记
+        private ImageView order_list_item_flug;
+        private TextView order_list_time;
+
+        //        private List<OrderList.Zorder.ZorderProduct> products;
+//        private OrderListItemAdapter orderListItemAdapter;
+        public OrderListHolder(View itemView) {
+            super(itemView);
+//            orderListItemAdapter = new OrderListItemAdapter();
+//            orderNameText = (TextView) itemView.findViewById(R.id.order_list_name);
+            orderPriText = (TextView) itemView.findViewById(R.id.order_list_price);
+            orderRecycleView = (RecyclerView) itemView.findViewById(R.id.order_item_recycle);
+            orderImageFlug = (ImageView) itemView.findViewById(R.id.order_list_flug);
+            order_state = (LinearLayout) itemView.findViewById(R.id.order_state);
+            order_list_item_flug = (ImageView) itemView.findViewById(R.id.order_list_item_flug);
+            orderImage_state = (ImageView) itemView.findViewById(R.id.order_list_image);
+            order_list_time = (TextView) itemView.findViewById(R.id.order_list_time);
+            linearLayoutManager = new WarpLinearLayoutManager(context, GridLayoutManager.HORIZONTAL, false);
+            orderRecycleView.setLayoutManager(linearLayoutManager);
+//            products = new ArrayList<>();
+//            orderListItemAdapter.setMyItemInfoList(products);
+        }
+    }
+
+
+    public interface OrderItemOnItemOnClickListener {
+        void setOnItemClick(View view, int position);
+    }
+
+    public void setOnClickItem(OrderItemOnItemOnClickListener orderItemOnItemOnClickListener) {
+        this.orderItemOnItemOnClickListener = orderItemOnItemOnClickListener;
+    }
+
+
+}

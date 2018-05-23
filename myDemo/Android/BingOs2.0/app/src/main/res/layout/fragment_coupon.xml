@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#FFFFFF"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/c_F4F4F4"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginLeft="50dp"
+        android:clipChildren="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/coupon_notuse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clipChildren="false">
+
+            <TextView
+                android:id="@+id/tv_coupon_notuse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@mipmap/brandshop_left_title_null"
+                android:drawablePadding="10dp"
+                android:text="未使用"
+                android:textColor="@color/c_919191"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/tv_notuse_num"
+                style="@style/coupon_red_text_num"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/coupon_will_expire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:clipChildren="false">
+
+            <TextView
+                android:id="@+id/tv_coupon_will_expire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@mipmap/brandshop_left_title_null"
+                android:drawablePadding="10dp"
+                android:text="即将过期"
+                android:textColor="@color/c_919191"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/tv_will_expire_num"
+                style="@style/coupon_red_text_num"
+                android:layout_marginLeft="75dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/coupon_have_failed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:clipChildren="false">
+
+            <TextView
+                android:id="@+id/tv_coupon_have_failed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@mipmap/brandshop_left_title_null"
+                android:drawablePadding="10dp"
+                android:text="已失效"
+                android:textColor="@color/c_919191"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/tv_have_failed_num"
+                style="@style/coupon_red_text_num"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/coupon_used"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:clipChildren="false">
+
+            <TextView
+                android:id="@+id/tv_coupon_used_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@mipmap/brandshop_left_title_null"
+                android:drawablePadding="10dp"
+                android:text="已使用"
+                android:textColor="@color/c_919191"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/tv_used_num"
+                style="@style/coupon_red_text_num"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_coupon"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

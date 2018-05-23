@@ -1,0 +1,204 @@
+package com.bingstar.bingmall.goods;
+
+import android.content.Context;
+import android.graphics.Paint;
+import android.text.TextUtils;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.bingstar.bingmall.R;
+import com.bingstar.bingmall.base.BaseActivity;
+import com.bingstar.bingmall.base.BaseRecycleAdapter;
+import com.bingstar.bingmall.base.Util;
+import com.bingstar.bingmall.cart.OneKeyCartFragment;
+import com.bingstar.bingmall.errinfo.ErrorFragment;
+import com.bingstar.bingmall.goods.bean.GoodsEntity;
+import com.bingstar.bingmall.goods.bean.OneKeyEvent;
+import com.bingstar.bingmall.goods.bean.ProductPic;
+import com.bingstar.bingmall.main.MainActivity;
+import com.bingstar.bingmall.main.bean.ToastEvent;
+import com.bingstar.bingmall.net.BingstarNet;
+import com.bingstar.bingmall.statistics.StatClient;
+import com.bingstar.bingmall.user.bean.User;
+import com.yunzhi.lib.view.OnSingleClickListener;
+
+import org.greenrobot.eventbus.EventBus;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * 功能：
+ * Created by yaoyafeng on 17/2/8 下午4:30
+ *
+ * @modificationHistory 逻辑或功能性重大变更记录
+ * @modify by user: {修改人} 17/2/8 下午4:30
+ * @modify by reason:{方法名}:{原因}
+ */
+public class
+GoodsListAdapter extends BaseRecycleAdapter<GoodsEntity, GoodsListAdapter.ViewHolder> {
+
+    private int isFrom = 1;
+
+    private Context context;
+
+    private long lastTime = 0;
+
+    final int TIME_SPACE = 3000;
+
+
+    public GoodsListAdapter(ArrayList<GoodsEntity> list, int from) {
+        super(list);
+        isFrom = from;
+    }
+
+    @Override
+    protected int getItemLayoutId(int viewType) {
+        return R.layout.goodslist_products_item;
+    }
+
+    private String getImgUrl(GoodsEntity goodsEntity) {
+        if (goodsEntity == null) {
+            return null;
+        }
+        List<ProductPic> pics = goodsEntity.getProductInfoDetail().getProductPicList();
+        if (pics == null || pics.size() == 0) {
+            return null;
+        }
+        for (ProductPic pic : pics) {
+            if ("1".equals(pic.getIsDefault())) {
+                return pic.getPicUrl();
+            }
+        }
+        return pics.get(0).getPicUrl();
+    }
+
+    @Override
+    public ViewHolder onCreateViewHolder(final ViewGroup parent, int viewType) {
+        final ViewHolder viewHolder = new ViewHolder(getView(parent, viewType));
+        viewHolder.goods_item_add_cart.setOnClickListener(new OnSingleClickListener() {
+            @Override
+            public void onSingleClick(View view) {
+                User.checkMemberId(parent.getContext(), new User.CheckMemberCallback() {
+                    @Override
+                    public void hasLogin() {
+                        try {
+                            GoodsEntity goodsEntity = getItem(viewHolder.getLayoutPosition());
+                            String stock = goodsEntity.getProductInfoDetail().getStock();
+                        /*if (!TextUtils.isEmpty(stock) && stock.equals("0")) {
+                            ((BaseActivity) context).showToast(context.getResources().getString(R.string.goods_detail_num_warnH1) + stock);
+                            return;
+                        }*/
+                            goodsEntity.addToCart(goodsEntity.getProductInfoDetail());
+                            long currentTime = System.currentTimeMillis();
+                            if (currentTime - lastTime > TIME_SPACE) {
+                                StatClient.upLoadClickCount(goodsEntity.getProductInfoDetail().getBsjProductId(),
+                                        goodsEntity.getProductInfoDetail().getBsjProductName());
+                            }
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+
+                    }
+                });
+
+            }
+        });
+        viewHolder.goods_item_one_key.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                User.checkMemberId(parent.getContext(), new User.CheckMemberCallback() {
+                    @Override
+                    public void hasLogin() {
+                        try {
+                            final GoodsEntity goodsEntity = getItem(viewHolder.getLayoutPosition());
+                            String stock = goodsEntity.getProductInfoDetail().getStock();
+                        /*if (!TextUtils.isEmpty(stock) && stock.equals("0")) {
+                            ((BaseActivity) context).showToast(context.getResources().getString(R.string.goods_detail_num_warnH1) + stock);
+                            return;
+                        }*/
+                            if (User.checkAddr()) {
+                                EventBus.getDefault().postSticky(new OneKeyEvent(goodsEntity.getProductInfoDetail().getBsjProductId(), "1"));//商品列表界面默认传1
+                            } else {
+                                EventBus.getDefault().post(new ToastEvent(context.getResources().getString(R.string.cart_oneKey_warn)));
+                            }
+                            StatClient.upLoadClickCount(goodsEntity.getProductInfoDetail().getBsjProductId(),
+                                    goodsEntity.getProductInfoDetail().getBsjProductName());
+
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+
+
+                    }
+                });
+            }
+        });
+        context = parent.getContext();
+        return viewHolder;
+    }
+
+    @Override
+    public void onBindViewHolder(GoodsListAdapter.ViewHolder holder, int position) {
+        super.onBindViewHolder(holder, position);
+        GoodsEntity goodsEntity = getItem(position);
+        if (isFrom == ErrorFragment.CollectFragment && position == 0) {
+           /* LinearLayout linearLayout = (LinearLayout) holder.itemView.findViewById(R.id.goods_product_item_linear);
+            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(240, 275);
+            layoutParams.setMargins(0, 15, 0, 0);
+            linearLayout.setLayoutParams(layoutParams);*/
+        }
+        Util.imageLoader(holder.goods_item_img, getImgUrl(goodsEntity), holder.itemView.getResources().getDrawable(R.drawable.img_error_bg));
+        holder.goods_item_name.setText(goodsEntity.getProductInfoDetail().getBsjProductName() + " " + goodsEntity.getProductInfoDetail().getWeight()
+                + goodsEntity.getProductInfoDetail().getUnit() + "");
+        if (goodsEntity.getProductInfoDetail().getLimitPrice() == null || goodsEntity.getProductInfoDetail().getLimitPrice().equals("")) {
+            /**
+             * liumengqiang 修改：将“¥”提出到string文件中
+             */
+            holder.goods_item_price.setText(context.getResources().getString(R.string.goods_detail_money) + goodsEntity.getProductInfoDetail().getPrice() + "");
+            holder.goods_item_price_d.setVisibility(View.GONE);
+        } else {
+            holder.goods_item_price.setText(context.getResources().getString(R.string.goods_detail_money) + goodsEntity.getProductInfoDetail().getLimitPrice() + "");
+            holder.goods_item_price_d.setText(context.getResources().getString(R.string.goods_detail_money) + goodsEntity.getProductInfoDetail().getPrice() + "");
+            //划线
+            holder.goods_item_price_d.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG | Paint.ANTI_ALIAS_FLAG);
+            holder.goods_item_price_d.setVisibility(View.VISIBLE);
+        }
+        String promotionInfo = goodsEntity.getProductInfoDetail().getActivity();
+        if (!TextUtils.isEmpty(promotionInfo)) {
+            holder.goods_item_promotionInfo.setVisibility(View.VISIBLE);
+            holder.goods_item_promotionInfo.setText(promotionInfo);
+        } else {
+            holder.goods_item_promotionInfo.setVisibility(View.GONE);
+        }
+    }
+
+    class ViewHolder extends BaseRecycleAdapter.ViewHolder {
+
+        ImageView goods_item_img;
+        TextView goods_item_name;
+        TextView goods_item_price_d;
+        TextView goods_item_price;
+        ImageView goods_item_add_cart;
+        //促销图标
+        TextView goods_item_promotionInfo;
+        //一建构
+        ImageView goods_item_one_key;
+
+
+        public ViewHolder(View itemView) {
+            super(itemView);
+            goods_item_img = (ImageView) itemView.findViewById(R.id.goods_item_img);
+            goods_item_name = (TextView) itemView.findViewById(R.id.goods_item_name);
+            goods_item_price_d = (TextView) itemView.findViewById(R.id.goods_item_price_d);
+            goods_item_price = (TextView) itemView.findViewById(R.id.goods_item_price);
+            goods_item_add_cart = (ImageView) itemView.findViewById(R.id.goods_item_add_cart);
+            goods_item_one_key = (ImageView) itemView.findViewById(R.id.goods_item_one_key);
+            goods_item_promotionInfo = (TextView) itemView.findViewById(R.id.goods_item_imgInfo);
+            goods_item_price_d.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);
+        }
+    }
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/relayout"
+        android:orientation="vertical"
+        android:layout_width="365dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="45dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="30dp"
+        android:paddingTop="40dp"
+        android:background="@drawable/addr_item_unselect"
+        />
+    <RelativeLayout
+        android:id="@+id/relayout_click"
+        android:orientation="vertical"
+        android:layout_width="365dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="45dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="30dp"
+        android:paddingTop="40dp">
+        <TextView
+            android:id="@+id/addrmanage_image_last"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/addr_add"
+            android:visibility="visible"/>
+    </RelativeLayout>
+
+</RelativeLayout>

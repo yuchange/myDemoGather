@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/718/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/base
+END
+RVScollListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/base/RVScollListener.java
+END
+IBasePresenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/base/IBasePresenter.java
+END
+BaseRecycleAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/base/BaseRecycleAdapter.java
+END
+ActionEditText.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/base/ActionEditText.java
+END
+BaseDialogFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/base/BaseDialogFragment.java
+END
+EventMsg.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/base/EventMsg.java
+END
+GlideRoundTransform.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/base/GlideRoundTransform.java
+END
+WebActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/656/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/base/WebActivity.java
+END
+DateUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/base/DateUtils.java
+END
+CrashHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/718/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/base/CrashHandler.java
+END
+Util.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/718/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/base/Util.java
+END
+IShowToast.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/base/IShowToast.java
+END
+BaseFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/base/BaseFragment.java
+END
+BaseActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/base/BaseActivity.java
+END
+IBaseView.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/base/IBaseView.java
+END
+SharedPreferencesUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/base/SharedPreferencesUtils.java
+END
+WarpLinearLayoutManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/597/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/base/WarpLinearLayoutManager.java
+END
+CustomListView.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/base/CustomListView.java
+END
+WrapGridLayoutManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/597/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/base/WrapGridLayoutManager.java
+END

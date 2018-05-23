@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/499/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/order/view
+END
+OrderDetailAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/order/view/OrderDetailAdapter.java
+END
+OrderListItemAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/499/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/order/view/OrderListItemAdapter.java
+END
+OrderItemAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/499/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/order/view/OrderItemAdapter.java
+END
+OrderInfoPresenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/order/view/OrderInfoPresenter.java
+END
+OrderInfoFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/499/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/order/view/OrderInfoFragment.java
+END
+IOrderInfoContract.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/%E5%86%B0%E4%BA%8B%E8%AE%B0/!svn/ver/440/trunk/bingMallAndroid/BingMall_2.0/app/src/main/java/com/bingstar/bingmall/order/view/IOrderInfoContract.java
+END
